@@ -19,30 +19,23 @@ if(!isset($_COOKIE["identificazione"]))
      
      <body>
      
-     <div id="logo">
-     <div id="forma">
      
+    <div id="paginazione">
+    <div id="logo">
+    
+    <div id="main">
+                    <ul>
+                    
+                        <li><a href="vendi.php" id="Vendi">Vendi</a></li>
+                        <li><a href="imperdibili.php" id="Imperdibili">Imperdibili</a></li>
+                        <li><a href="inevidenza.php" id="inevidenza">In evidenza</a></li>
+                        <li><a href="contattaci.php" id="Contattaci">Contattaci</a></li>
+                        <li><a href="ricerca.php" id="Ricerca">Ricerca</a></li>
+                    </ul>
+                </div>
+                </div>
       
      
-    
-     
-     
-    
-     <form method='post' name='ricerca' action='cerca.php'>
-	<table border="0">
-
-	
-	<td><input type="text" name="testo" onkeyup='Cerca()'
-	style="width:400px; height:30px;margin: 15px "/></td>
-	<td><input type="submit" value="Cerca" /></td></tr>
-
-	<tr><td></td><td><div id='box'
-	style="width:300px"><td></td></tr>
-
-	</table>
-</form>
-
-Inizia a vendere | Imperdibili | Contattaci | In evidenza |
      
      
      </body>

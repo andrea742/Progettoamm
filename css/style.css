@@ -10,23 +10,97 @@ body
 	/*font: 15px Trebuchet MS;*/
 }
 
+
+#paginazione
+{
+	
+	width: 1000px;
+	padding: 8px;
+
+	margin: auto;
+
+	background-color: white;
+
+	border-radius: 5px;
+	border-top: 4px groove #FFFFFF;
+	border-left: 4px groove #FFFFFF;
+	border-right: 4px ridge #FFFFFF;
+	border-bottom: 4px ridge #FFFFFF;
+
+	box-shadow: 8px 8px 20px lightblue;
+}
+
+
 #logo
 {
-	height: 100px;
+	height: 200px;
 
 	background-color:#E6E6E6;
-	background-image: url('../immagini/logo2.bmp');
+	background-image: url('../immagini/logo3.bmp');
 	background-repeat: no-repeat;
-	background-position: 90px 10px;
+	background-position: center;
 
 	/*border-radius: 5px 5px 0px 0px;*/
 }
 
 
-#forma
+
+
+
+
+
+
+
+
+#main
 {
+	background-color: #9999FF;
+
+	text-align: center;
+}
+
+div#main a:link, div#main a:visited
+{
+	color: blue;
+	/*text-decoration: none;*/
+}
+
+div#main a:hover
+{
+	color: green;
+}
+
+div#main ul
+{
+	margin: 0px;
+
+	padding: 0px 0px;
+
+    	border-bottom: 10px solid lightblue;
+}
+
+
+div#main .current_page
+{
+	background-color: black;
+}
+
+div#main li
+{
+	width: 125px;
+
+	margin: 0px 0px;
+
+	padding: 5px;
+
+	background-color: #E6E6E6;
+
 	
-	margin-left:350px;
+
+	display: inline-block;
+
 	
+
+	text-align: center;
 }
 
