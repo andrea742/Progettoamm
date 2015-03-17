@@ -20,6 +20,11 @@ if(!isset($_COOKIE["identificazione"]))
      <body>
      
      <div id="logo">
+      
+     <form method="post" action="cerca.php">
+    <input type="text" name="testo" placeholder="Ricerca..." /><br  />
+    <input type="submit" value="CERCA"  />
+    </form>
      
      
      </body>
