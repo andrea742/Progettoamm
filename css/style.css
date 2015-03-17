@@ -17,7 +17,7 @@ body
 	background-color:#E6E6E6;
 	background-image: url('../immagini/logo.bmp');
 	background-repeat: no-repeat;
-	background-position: 180px 5px;
+	background-position: 90px 10px;
 
-	border-radius: 5px 5px 0px 0px;
+	/*border-radius: 5px 5px 0px 0px;*/
 }
