@@ -41,6 +41,8 @@ if(!isset($_COOKIE["identificazione"]))
 
 	</table>
 </form>
+
+Inizia a vendere | Imperdibili | Contattaci | In evidenza |
      
      
      </body>
