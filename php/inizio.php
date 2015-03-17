@@ -11,7 +11,7 @@ if(!isset($_COOKIE["identificazione"]))
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <meta name="author" content="Sabiu Andrea 47736"/>
         <meta name="description" content="Sito eCommerce"/>
-        <title>Compro e Vendo 4</title>
+        <title>Compro e Vendo</title>
         <link rel="shortcut icon" type="image/x-icon" href="../immagini/favicon.ico"/>
         <link rel="Stylesheet" type="text/css" href="../css/style.css" media="screen"/>
      </head>
