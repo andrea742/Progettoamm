@@ -12,7 +12,7 @@ if(!isset($_COOKIE["identificazione"]))
         <meta name="author" content="Sabiu Andrea 47736"/>
         <meta name="description" content="Sito eCommerce"/>
         <title>Purchase.it - Home</title>
-        <link rel="shortcut icon" type="image/x-icon" href="../immagini/favicon.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="../immagini/favicon.png"/>
         <link rel="Stylesheet" type="text/css" href="../css/style.css" media="screen"/>
      </head>
      
