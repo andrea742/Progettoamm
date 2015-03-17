@@ -20,8 +20,10 @@ if(!isset($_COOKIE["identificazione"]))
      <body>
      
      <div id="logo">
-     </div>
      <div id="forma">
+     
+      
+     
     
      
      
@@ -31,7 +33,7 @@ if(!isset($_COOKIE["identificazione"]))
 
 	
 	<td><input type="text" name="testo" onkeyup='Cerca()'
-	style="width:400px; height:40px; "/></td>
+	style="width:400px; height:60px; "/></td>
 	<td><input type="submit" value="Cerca" /></td></tr>
 
 	<tr><td></td><td><div id='box'
