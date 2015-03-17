@@ -9,3 +9,15 @@ body
 
 	/*font: 15px Trebuchet MS;*/
 }
+
+#logo
+{
+	height: 110px;
+
+	background-color:#E6E6E6;
+	background-image: url('../immagini/logo.bmp');
+	background-repeat: no-repeat;
+	background-position: 180px 5px;
+
+	border-radius: 5px 5px 0px 0px;
+}

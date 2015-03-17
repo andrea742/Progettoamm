@@ -18,6 +18,10 @@ if(!isset($_COOKIE["identificazione"]))
      
      
      <body>
+     
+     <div id="logo">
+     
+     
      </body>
      </html>
      
