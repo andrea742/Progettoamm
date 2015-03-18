@@ -11,7 +11,7 @@ if(!isset($_COOKIE["identificazione"]))
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <meta name="author" content="Sabiu Andrea 47736"/>
         <meta name="description" content="Sito eCommerce"/>
-        <title>Purchase.it - Home</title>
+        <title>Purchase.it - Imperdibili</title>
         <link rel="shortcut icon" type="image/x-icon" href="../immagini/favicon.png"/>
         <link rel="Stylesheet" type="text/css" href="../css/style.css" media="screen"/>
      </head>
@@ -23,6 +23,13 @@ if(!isset($_COOKIE["identificazione"]))
     <div id="paginazione">
     <div id="logo">
     
+    <div id="arrivo">
+                        
+                            <a href="login.php" target="_blank"><img src="../immagini/login.jpg" width="180" height="60" /></a>
+                       
+                        </div>
+                </div>
+    
     <div id="main">
                     <ul>
                     
@@ -33,7 +40,14 @@ if(!isset($_COOKIE["identificazione"]))
                         <li><a href="ricerca.php" id="Ricerca">Ricerca</a></li>
                     </ul>
                 </div>
-                </div>
+                
+                
+                
+                
+                
+                
+                    
+
       
      
      

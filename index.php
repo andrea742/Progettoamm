@@ -1,6 +1,10 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+una descrizione
 
-$paginainiziale = "php/inizio.php";
-
-header("Location:".$paginainiziale);
-?>
+</body>
+</html>

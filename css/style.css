@@ -7,15 +7,43 @@ body
 
 	background-color: #E6E6E6;
 
-	/*font: 15px Trebuchet MS;*/
+	font: 20px Andele Mono;font-weight: bold;
 }
+
+
+
+
+
+
+
+
+#arrivo
+{
+	margin-top: -140px;
+	margin-right: 10px;;
+
+	color: #BBBBBB;
+	text-shadow: 2px 2px 4px black;
+	text-align: right;
+}
+
+
+#form-login
+{
+	margin-top: 30px;
+	margin-left: 50px;
+
+	color: #444444;
+}
+
+
 
 
 #paginazione
 {
 	
 	width: 1000px;
-	padding: 8px;
+	padding: 150px;
 
 	margin: auto;
 
@@ -33,6 +61,7 @@ body
 
 #logo
 {
+	margin-top: 30px;
 	height: 200px;
 
 	background-color:#E6E6E6;
@@ -62,12 +91,13 @@ body
 div#main a:link, div#main a:visited
 {
 	color: blue;
-	/*text-decoration: none;*/
+	text-decoration: none;
 }
 
 div#main a:hover
 {
-	color: green;
+	color: black;
+	text-decoration: underline;
 }
 
 div#main ul
@@ -83,6 +113,7 @@ div#main ul
 div#main .current_page
 {
 	background-color: black;
+	
 }
 
 div#main li
