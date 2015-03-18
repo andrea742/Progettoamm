@@ -25,7 +25,7 @@ if(!isset($_COOKIE["identificazione"]))
     
     <div id="arrivo">
                         
-                            <a href="login.php" target="_blank"><img src="../immagini/login.jpg" width="180" height="60" /></a>
+                            <a href="login.php" target="_self"><img src="../immagini/login.jpg" width="180" height="60" /></a>
                        
                         </div>
                 </div>
