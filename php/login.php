@@ -32,7 +32,8 @@ if(!isset($_COOKIE["identificazione"]))
     
     <div id="main">
                     <ul>
-                    
+                    	
+                        <li><a href="index.php" id="Home">Home</a></li>
                         <li><a href="vendi.php" id="Vendi">Vendi</a></li>
                         <li><a href="imperdibili.php" id="Imperdibili">Imperdibili</a></li>
                         <li><a href="inevidenza.php" id="inevidenza">In evidenza</a></li>
