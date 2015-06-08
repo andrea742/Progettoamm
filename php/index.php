@@ -1,8 +1,8 @@
 <?php
 
-include_once 'controller/ControllerBase.php';
-include_once 'controller/ControllerCliente.php';
-include_once 'controller/ControllerVenditore.php';
+include_once 'controller/BaseController.php';
+include_once 'controller/ClienteController.php';
+include_once 'controller/VenditoreController.php';
 
 date_default_timezone_set("Europe/Rome");
 
@@ -22,7 +22,7 @@ class ControllerMain
         {
             if($request["logout"] === 'Logout') 
             {
-                $cont = new ControllerBase();
+                $cont = new BaseController();
                 $cont->handleInput($request);
             }
         }
@@ -34,20 +34,20 @@ class ControllerMain
                 {
                   //cliente
                     case '1':
-                        $cont = new ControllerCliente();
+                        $cont = new ClienteController();
                         $cont->handleInput($request); 
                         break;
 
                    //venditore
                     case '2':
-                        $cont = new ControllerVenditore();
+                        $cont = new VenditoreController();
                         $cont->handleInput($request);
                         break;
                 }
             }
             else   
             {
-                $cont = new ControllerBase();
+                $cont = new BaseController();
                 $cont->handleInput($request);            
             }
         }
