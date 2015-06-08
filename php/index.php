@@ -1,74 +1,57 @@
-<!DOCTYPE html>
-
 <?php
 
-setcookie("redirect", null);
-if(!isset($_COOKIE["identificazione"]))
-{
-?>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <meta name="author" content="Sabiu Andrea 47736"/>
-        <meta name="description" content="Sito eCommerce"/>
-        <title>Purchase.it - Login</title>
-        <link rel="shortcut icon" type="image/x-icon" href="../immagini/favicon.png"/>
-        <link rel="Stylesheet" type="text/css" href="../css/style.css" media="screen"/>
-     </head>
-     
-     
-     <body>
-     
-     
-    <div id="paginazione">
-    <div id="logo">
-    
-    <div id="arrivo">
-                        
-                            <a href="login.php" target="_self"><img src="../immagini/login.jpg" width="180" height="60" /></a>
-                       
-                        </div>
-                </div>
-    
-    <div id="main">
-                    <ul>
-                    
-                    	<li><a href="index.php" id="Home">Home</a></li>
-                        <li><a href="vendi.php" id="Vendi">Vendi</a></li>
-                        <li><a href="imperdibili.php" id="Imperdibili">Imperdibili</a></li>
-                        <li><a href="inevidenza.php" id="inevidenza">In evidenza</a></li>
-                        <li><a href="contattaci.php" id="Contattaci">Contattaci</a></li>
-                        <li><a href="ricerca.php" id="Ricerca">Ricerca</a></li>
-                    </ul>
-                </div>
-                
-                
-                
-                
-                
-                
-                    
+include_once 'controller/ControllerBase.php';
+include_once 'controller/ControllerCliente.php';
+include_once 'controller/ControllerVenditore.php';
 
-      
-     
-     
-     
-     </body>
-     </html>
-     
-     
-<?
+date_default_timezone_set("Europe/Rome");
+
+ControllerMain::findUserType($_REQUEST);
+
+class ControllerMain
+{
+
+
+    public static function findUserType(&$request)
+    {         
+       
+        session_start();
+        
+       
+        if(isset($request["logout"]))
+        {
+            if($request["logout"] === 'Logout') 
+            {
+                $cont = new ControllerBase();
+                $cont->handleInput($request);
+            }
+        }
+        else
+        {   
+            if(isset($_SESSION['role']))
+            {
+                switch($_SESSION['role'])
+                {
+                  //cliente
+                    case '1':
+                        $cont = new ControllerCliente();
+                        $cont->handleInput($request); 
+                        break;
+
+                   //venditore
+                    case '2':
+                        $cont = new ControllerVenditore();
+                        $cont->handleInput($request);
+                        break;
+                }
+            }
+            else   
+            {
+                $cont = new ControllerBase();
+                $cont->handleInput($request);            
+            }
+        }
+    }
 }
 
-else
-{
-    $login = "logout.php";
-    $redirect = "inizio.php";
-
-    setcookie("redirect", $redirect, time()+300);
-
-	header("Location:".$login);
-}
 ?>
-					
-				
