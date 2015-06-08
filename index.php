@@ -18,6 +18,24 @@
 
 </ul>
 
+<h2><p> Per accedere al progetto andare su:  </p></h2> <br>
+<a href="php/login">http://spano.sc.unica.it/amm2014/sabiuAndrea/Progettoamm/php/login</a>
+
+<p>Credenziali per accesso al sito:</p>
+    <ul>
+        <li>Cliente:</li>
+        <ul>
+            <li>user: cliente</li>
+            <li>password: cliente</li>
+        </ul>
+        <li>Ruolo venditore:</li>
+        <ul>
+            <li>username: venditore</li>
+            <li>password: venditore</li>
+        </ul>
+    </ul>
+
+
 
 
 </body>
