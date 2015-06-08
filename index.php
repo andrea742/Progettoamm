@@ -2,6 +2,6 @@
 
 $index = "php/index.php";
 
-header("Location:".$index);
+header("Location:".$inde);
 ?>
 
