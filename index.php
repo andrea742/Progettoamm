@@ -19,7 +19,7 @@
 </ul>
 
 <h2><p> Per accedere al progetto andare su:  </p></h2> <br>
-<a href="php/login">http://spano.sc.unica.it/amm2014/sabiuAndrea/Progettoamm/php/index.php</a>
+<a href="php/login">http://spano.sc.unica.it/amm2014/sabiuAndrea/Progettoamm/php/view/login</a>
 
 <p>Credenziali per accesso al sito:</p>
     <ul>
