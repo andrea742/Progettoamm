@@ -65,11 +65,11 @@ class UserFactory {
             return null;
         }
 
-        $cliente = self::caricaClienteDaStmt($stmt);
-        if (isset($cliente)) {
+        $clienti = self::caricaClienteDaStmt($stmt);
+        if (isset($clienti)) {
             // ho trovato uno studente
             $mysqli->close();
-            return $cliente;
+            return $clienti;
         }
 
         // ora cerco un addetto agli ordini
