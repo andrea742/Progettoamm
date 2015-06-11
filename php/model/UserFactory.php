@@ -2,7 +2,7 @@
 
 include_once 'User.php';
 include_once 'Venditori.php';
-include_once 'Cliente.php';
+include_once 'Clienti.php';
 include_once 'Db.php';
 
 
