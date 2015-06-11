@@ -2,7 +2,7 @@
 
 include_once 'User.php';
 include_once 'Venditori.php';
-include_once 'Clienti.php';
+include_once 'Cliente.php';
 include_once 'Db.php';
 
 
@@ -198,7 +198,7 @@ class UserFactory {
         
         $mysqli = Db::getInstance()->connectDb();
         if (!isset($mysqli)) {
-            error_log("[getListaAddettoOrdini] impossibile inizializzare il database");
+            error_log("[getListaVenditori] impossibile inizializzare il database");
             $mysqli->close();
             return $venditore;
         }
@@ -340,13 +340,13 @@ class UserFactory {
                 $d->getCognome(), 
                 $d->getTelefono(),
                 $d->getId())) {
-            error_log("[salvaVliente] impossibile" .
+            error_log("[salvaCliente] impossibile" .
                     " effettuare il binding in input");
             return 0;
         }
 
         if (!$stmt->execute()) {
-            error_log("[caricaIscritti] impossibile" .
+            error_log("[caricaIscritti] impossibile" . //controlla qua
                     " eseguire lo statement");
             return 0;
         }

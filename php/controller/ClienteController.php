@@ -45,12 +45,12 @@ class ClienteController extends BaseController { // questa funzione è da modifi
                         break;
 
                    //controlla questo caso 
-                    case 'ordina':                        
+                    /*case 'ordina':                        
                         $_SESSION['pagina'] = 'ordina.php';
                         $pizze = PizzaFactory::instance()->getPizze();
                         $orari = OrarioFactory::instance()->getOrari();
                         $vd->setSottoPagina('ordina');
-                        break;
+                        break;*/
 
                      //controlla questo caso 
                     case 'elenco_ordini':
@@ -113,7 +113,7 @@ class ClienteController extends BaseController { // questa funzione è da modifi
 						
 						//controlla questo caso 
 						
-						case 'dettaglio':
+			case 'dettaglio':
                        
                         $_SESSION['pagina'] = 'dettaglio_ordine.php'; 
                         $ordineId = filter_var($request['ordine'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);

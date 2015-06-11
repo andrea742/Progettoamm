@@ -43,7 +43,7 @@ class BaseController {
             }
         }
 		
-		 require basename(__DIR__) . '/../view/master.php';//file da fare
+		 require basename(__DIR__) . '/../view/master.php';
     }
 	
 	protected function loggedIn() {
