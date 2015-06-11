@@ -232,7 +232,7 @@ class UserFactory {
         $venditore->setNome($row['venditori_nome']);
         $venditore->setCognome($row['venditori_cognome']);
         $venditore->setTelefono($row['venditori_telefono']);
-        $venditore->setRuolo(User::Venditori);
+        $venditore->setRuolo(User::Venditore);
         
 
         return $venditore;
