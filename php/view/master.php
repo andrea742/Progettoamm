@@ -49,7 +49,7 @@ if (!$vd->isJson()) {
                         <li id="categories">
                             <?php
                             $left = $vd->getLeftBarFile();
-                            require "$left";
+                            //require "$left";
                             ?>
                         </li>
 
