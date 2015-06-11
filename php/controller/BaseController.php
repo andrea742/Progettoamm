@@ -69,13 +69,13 @@ class BaseController {
         $vd->setContentFile(basename(__DIR__) . '/../view/cliente/content.php');
     }
 	
-	 protected function showHomeAddettoOrdini($vd) {//controlla il nome della funzione e cosa deve fare
+	 protected function showHomeVenditori($vd) {//controlla il nome della funzione e cosa deve fare
       
-        $vd->setTitolo("Purchase.it - gestione addetto ordini");
-        $vd->setMenuFile(basename(__DIR__) . '/../view/addettoOrdini/menu.php');
-        $vd->setLogoFile(basename(__DIR__) . '/../view/addettoOrdini/logo.php');
-        $vd->setLeftBarFile(basename(__DIR__) . '/../view/addettoOrdini/leftBar.php');
-        $vd->setContentFile(basename(__DIR__) . '/../view/addettoOrdini/content.php');
+        $vd->setTitolo("Purchase.it - gestione venditori");
+        $vd->setMenuFile(basename(__DIR__) . '/../view/venditore/menu.php');
+        $vd->setLogoFile(basename(__DIR__) . '/../view/venditore/logo.php');
+        $vd->setLeftBarFile(basename(__DIR__) . '/../view/venditore/leftBar.php');
+        $vd->setContentFile(basename(__DIR__) . '/../view/venditore/content.php');
     }
 	
 	protected function showHomeUtente($vd) {
