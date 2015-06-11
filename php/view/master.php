@@ -28,7 +28,7 @@ if (!$vd->isJson()) {
                     <div class="logout">
                         <?php
                         $logo = $vd->getLogoFile();
-                        //require "$logo";
+                        require "$logo";
                         ?>
                     </div>
 
@@ -36,7 +36,7 @@ if (!$vd->isJson()) {
                 <div id="menu">
                     <?php
                         $menu = $vd->getMenuFile();
-                        //require "$menu";
+                        require "$menu";
                     ?>
                 </div> 
 
@@ -49,7 +49,7 @@ if (!$vd->isJson()) {
                         <li id="categories">
                             <?php
                             $left = $vd->getLeftBarFile();
-                            //require "$left";
+                            require "$left";
                             ?>
                         </li>
 
@@ -82,7 +82,7 @@ if (!$vd->isJson()) {
                     ?>
                     <?php
                     $content = $vd->getContentFile();
-                    //require "$content";
+                    require "$content";
                     ?>
 
 
