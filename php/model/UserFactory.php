@@ -173,19 +173,19 @@ class UserFactory {
     
     
    public function creaClienteDaArray($row) {
-        $venditori = new Cliente();
-        $venditori->setId($row['venditori_id']); 
-        $venditori->setUsername($row['venditori_username']);
-        $venditori->setPassword($row['venditori_password']);        
-        $venditori->setNome($row['venditori_nome']);    
-        $venditori->setCognome($row['venditori_cognome']);
-        $venditori->setMail($row['venditori_mail']);
-        $venditori->setIndirizzo($row['venditori_indirizzo']);
-        $venditori->setCitta($row['venditori_citta']);                  
-        $venditori->setCap($row['addettoOrdini_cap']);       
-        $venditori->setRuolo(User::Cliente);
+        $venditore = new Cliente();
+        $venditore->setId($row['venditori_id']); 
+        $venditore->setUsername($row['venditori_username']);
+        $venditore->setPassword($row['venditori_password']);        
+        $venditore->setNome($row['venditori_nome']);    
+        $venditore->setCognome($row['venditori_cognome']);
+        $venditore->setMail($row['venditori_mail']);
+        $venditore->setIndirizzo($row['venditori_indirizzo']);
+        $venditore->setCitta($row['venditori_citta']);                  
+        $venditore->setCap($row['addettoOrdini_cap']);       
+        $venditore->setRuolo(User::Cliente);
 
-        return $venditori;
+        return $venditore;
     }
     
     /**
@@ -193,27 +193,27 @@ class UserFactory {
      * @return array
      */
     public function &getListaVenditori() {
-        $venditori = array();
+        $venditore = array();
         $query = "select * from venditori ";
         
         $mysqli = Db::getInstance()->connectDb();
         if (!isset($mysqli)) {
             error_log("[getListaAddettoOrdini] impossibile inizializzare il database");
             $mysqli->close();
-            return $venditori;
+            return $venditore;
         }
         $result = $mysqli->query($query);
         if ($mysqli->errno > 0) {
             error_log("[getListaVenditori] impossibile eseguire la query");
             $mysqli->close();
-            return $venditori;
+            return $venditore;
         }
 
         while ($row = $result->fetch_array()) {
-            $venditori[] = self::creaVenditoriDaArray($row);
+            $venditore[] = self::creaVenditoriDaArray($row);
         }
 
-        return $venditori;
+        return $venditore;
     }
 
 
@@ -225,17 +225,17 @@ class UserFactory {
      * @return \AddettoOrdini
      */
     public function creaVenditoriDaArray($row) {
-        $venditori = new Venditori();
-        $venditori->setId($row['venditori_id']);
-        $venditori->setUsername($row['venditori_username']);
-        $venditori->setPassword($row['venditori_password']);
-        $venditori->setNome($row['venditori_nome']);
-        $venditori->setCognome($row['venditori_cognome']);
-        $venditori->setTelefono($row['venditori_telefono']);
-        $venditori->setRuolo(User::Venditori);
+        $venditore = new Venditori();
+        $venditore->setId($row['venditori_id']);
+        $venditore->setUsername($row['venditori_username']);
+        $venditore->setPassword($row['venditori_password']);
+        $venditore->setNome($row['venditori_nome']);
+        $venditore->setCognome($row['venditori_cognome']);
+        $venditore->setTelefono($row['venditori_telefono']);
+        $venditore->setRuolo(User::Venditori);
         
 
-        return $venditori;
+        return $venditore;
     }
 
     /**
@@ -464,7 +464,7 @@ class UserFactory {
     * @return dati del cliente corrispondenti all'id considerato
     */    
     public function getClientePerId($id) {
-       $venditori = array();
+       $venditore = array();
         $query = "SELECT * FROM clienti WHERE clienti.id = ? ";          
         
         $mysqli = Db::getInstance()->connectDb();
@@ -490,7 +490,7 @@ class UserFactory {
             return $cliente;
         } 
         
-        $venditori = self::caricaClienteDaStmt($stmt);
+        $cliente = self::caricaClienteDaStmt($stmt);
 
         $mysqli->close();
         return $cliente;        
