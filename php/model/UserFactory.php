@@ -65,7 +65,7 @@ class UserFactory {
             return null;
         }
 
-        $cliente = self::caricaClientiDaStmt($stmt);
+        $cliente = self::caricaClienteDaStmt($stmt);
         if (isset($cliente)) {
             // ho trovato uno studente
             $mysqli->close();
@@ -110,12 +110,15 @@ class UserFactory {
 
         $row = array();
         $bind = $stmt->bind_result(
-                $row['venditori_id'], 
-                $row['venditori_username'],
-                $row['venditori_password'],
-                $row['venditori_nome'],
-                $row['venditori_cognome'],
-                $row['venditori_telefono']);
+                $row['clienti_id'], 
+                $row['clienti_username'],
+                $row['clienti_password'],
+                $row['clienti_nome'],
+                $row['clienti_cognome'],
+                 $row['clienti_mail'],
+                 $row['clienti_indirizzo'],
+                 $row['clienti_citta'],
+                $row['clienti_cap']);
                 
         
         if (!$bind) {
