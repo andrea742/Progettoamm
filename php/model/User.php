@@ -63,11 +63,15 @@ class User {
      */
     private $citta;
     
+    private $mail;
+    
     /**
      * Cap dell'utente. Lo vogliamo max di cinque cifre
      * @var int 
      */
     private $cap;
+    
+     private $telefono;
     
     /**
      * Identificatore dell'utente
@@ -121,6 +125,17 @@ class User {
         return true;
     }
 
+    
+     public function getTelefono() {
+        return $this->telefono;
+    }
+
+    public function setTelefono($telefono) {
+        $this->telefono = $telefono;
+        return true;
+    }
+    
+    
     /**
      * Restituisce la password per l'utente corrente
      * @return string
@@ -175,6 +190,26 @@ class User {
      */
     public function setCognome($cognome) {
         $this->cognome = $cognome;
+        return true;
+    }
+    
+    
+    /**
+     * Restituisce il cognome dell'utente
+     * @return string
+     */
+    public function getMail() {
+        return $this->mail;
+    }
+
+    /**
+     * Imposta il cognome dell'utente
+     * @param string $cognome
+     * @return boolean true se il cognome e' stato impostato correttamente,
+     * false altrimenti
+     */
+    public function setMail($mail) {
+        $this->mail = $mail;
         return true;
     }
     
