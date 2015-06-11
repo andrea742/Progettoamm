@@ -78,9 +78,9 @@ class BaseController {
         $vd->setContentFile(basename(__DIR__) . '/../view/venditore/content.php');
     }
 	
-	/*protected function showHomeUtente($vd) {
+	protected function showHomeUtente($vd) {
         $user = UserFactory::instance()->cercaUtentePerId($_SESSION[self::user], $_SESSION[self::role]);
-        switch ($user->getRuolo()) {
+        /*switch ($user->getRuolo()) {
             case User::Cliente:
                 $this->showHomeCliente($vd);
                 break;
@@ -89,8 +89,8 @@ class BaseController {
                 $this->showHomeVenditori($vd);//controlla qua
                 break;
 
-        }
-    }*/
+        }*/
+    }
 	
 	 protected function login($vd, $username, $password) {
       
