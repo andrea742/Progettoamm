@@ -4,7 +4,7 @@
 class Settings {
 
    
-    public static $db_host = 'localhost';
+    public static $db_host = 'spano.sc.unica.it';
     public static $db_user = 'sabiuAndrea';
     public static $db_password = 'talpa816';
     public static $db_name='amm14_sabiuAndrea';
