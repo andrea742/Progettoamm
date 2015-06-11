@@ -1,9 +1,7 @@
 <?php
 
 include_once 'BaseController.php';
-include_once basename(__DIR__) . '/../model/Pizza_ordineFactory.php'; // da controllare
-include_once basename(__DIR__) . '/../model/OrarioFactory.php';// da controllare
-include_once basename(__DIR__) . '/../model/PizzaFactory.php';// da controllare
+include_once basename(__DIR__) . '/../model/Articolo_ordineFactory.php'; // da controllare
 include_once basename(__DIR__) . '/../model/OrdineFactory.php';// da controllare
 
 class VenditoreController extends BaseController { //controlla il nome della classe
@@ -60,29 +58,7 @@ class VenditoreController extends BaseController { //controlla il nome della cla
                         break;                    
                     
                      //controlal questo caso
-                    case 'filtra_ordini':
-                        $vd->toggleJson();
-                        $vd->setSottoPagina('ricerca_ordini_json');
-                        
-                        $errori = array();
-
-                        if (isset($request['myData']) && ($request['myData'] != '')) {
-                            $data = $request['myData'];
-                        } else {
-                            $data = null;
-                        }
-
-                        if (isset($request['myOra']) && ($request['myOra'] != '')) {
-                            $ora = $request['myOra'];
-                        } else {
-                            $ora = null;
-                        }
-                       
-                        $ordini = OrdineFactory::instance()->getOrdiniPerDataOra($data, $ora);
-                        
-
-                        
-                        break;
+                    
 
                     default:
                         $_SESSION['pagina'] = 'home.php';
@@ -111,7 +87,7 @@ class VenditoreController extends BaseController { //controlla il nome della cla
                         $_SESSION['pagina'] = 'dettaglio_ordine.php';                            
                         $ordineId = filter_var($request['ordine'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
                         $ordine = OrdineFactory::instance()->getOrdine($ordineId);
-                        $POs = Pizza_ordineFactory::instance()->getPOPerIdOrdine($ordine);
+                        $POs = Articolo_ordineFactory::instance()->getPOPerIdOrdine($ordine);
                         $cliente = UserFactory::instance()->getClientePerId($ordine->getCliente());
                         $vd->setSottoPagina('dettaglio_ordine');
                         $this->showHomeUtente($vd);
@@ -119,19 +95,7 @@ class VenditoreController extends BaseController { //controlla il nome della cla
                     
 					 //controlal questo caso
 					
-                    case 'paga':
-                        
-                        $msg = array();
-                        $ordineId = filter_var($request['ordine'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
-                        if (OrdineFactory::instance()->setPagato($ordineId, $user)) {
-                            $this->creaFeedbackUtente($msg, $vd, "Ordine ".$ordineId." pagato.");
-                        }else $this->creaFeedbackUtente($msg, $vd, "Errore cancellazione"); 
-                        
-                        $vd->setSottoPagina('gestione_ordini');
-                        $ordini = OrdineFactory::instance()->getOrdiniNonPagati();
-                        $this->showHomeUtente($vd);                        
-                        break;
-
+                    
                    
                     default:
                         $this->showHomeUtente($vd);
