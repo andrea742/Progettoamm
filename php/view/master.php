@@ -36,7 +36,7 @@ if (!$vd->isJson()) {
                 <div id="menu">
                     <?php
                         $menu = $vd->getMenuFile();
-                        require "$menu";
+                        //require "$menu";
                     ?>
                 </div> 
 
