@@ -86,7 +86,7 @@ class BaseController {
                 break;
 
             case User::Venditore://controlla qua
-                $this->showHomeAddettoOrdini($vd);//controlla qua
+                $this->showHomeVenditori($vd);//controlla qua
                 break;
 
         }

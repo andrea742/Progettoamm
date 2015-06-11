@@ -91,7 +91,7 @@ class UserFactory {
             return null;
         }
 
-        $venditori = self::caricaVenditoriDaStmt($stmt);
+        $venditore = self::caricaVenditoriDaStmt($stmt);
         if (isset($venditore)) {
             // ho trovato un docente
             $mysqli->close();
