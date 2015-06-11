@@ -140,28 +140,28 @@ class UserFactory {
      * @return array
      */
     public function &getListaClienti() {
-        $clienti = array();
+        $cliente = array();
         $query = "select * from clienti";
         
         $mysqli = Db::getInstance()->connectDb();
         if (!isset($mysqli)) {
             error_log("[getListaClienti] impossibile inizializzare il database");
             $mysqli->close();
-            return $clienti;
+            return $cliente;
         }
         $result = $mysqli->query($query);
         if ($mysqli->errno > 0) {
             error_log("[getListaClienti] impossibile eseguire la query");
             $mysqli->close();
-            return $clienti;
+            return $cliente;
         }
 
         while ($row = $result->fetch_array()) {
-            $clienti[] = self::creaClienteDaArray($row);
+            $cliente[] = self::creaClienteDaArray($row);
         }
         //togliere?
         $mysqli->close();
-        return $clienti;
+        return $cliente;
     }
 
     /**
@@ -430,7 +430,7 @@ class UserFactory {
                 return self::caricaClienteDaStmt($stmt);
                 break;
 
-            case User::Venditori:
+            case User::Venditore:
                 $query = "select * from venditori where id = ?";
 
                 $stmt = $mysqli->stmt_init();
@@ -471,7 +471,7 @@ class UserFactory {
         if (!isset($mysqli)) {
             error_log("[getClientePerId] impossibile inizializzare il database");
             $mysqli->close();
-            return $venditori;
+            return $cliente;
         }
 
         $stmt = $mysqli->stmt_init();
@@ -480,20 +480,20 @@ class UserFactory {
             error_log("[getClientePerId] impossibile" .
                     " inizializzare il prepared statement");
             $mysqli->close();
-            return $venditori;
+            return $cliente;
         }
 
         if (!$stmt->bind_param('i', $id)) {
             error_log("[getClientePerId] impossibile" .
                     " effettuare il binding in input");
             $mysqli->close();
-            return $venditori;
+            return $cliente;
         } 
         
         $venditori = self::caricaClienteDaStmt($stmt);
 
         $mysqli->close();
-        return $venditori;        
+        return $cliente;        
                 
     }
 }
