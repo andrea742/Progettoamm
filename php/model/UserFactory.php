@@ -257,7 +257,7 @@ class UserFactory {
             case User::Cliente:
                 $count = $this->salvaCliente($user, $stmt);
                 break;
-            case User::Venditori:
+            case User::Venditore:
                 $count = $this->salvaVenditori($user, $stmt);
         }
 
