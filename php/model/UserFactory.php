@@ -115,7 +115,7 @@ class UserFactory {
                 $row['venditori_password'],
                 $row['venditori_nome'],
                 $row['venditori_cognome'],
-                $row['venditori_telefono'],
+                $row['venditori_telefono'];
                 
         
         if (!$bind) {
