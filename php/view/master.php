@@ -82,7 +82,7 @@ if (!$vd->isJson()) {
                     ?>
                     <?php
                     $content = $vd->getContentFile();
-                    require "$content";
+                    //require "$content";
                     ?>
 
 
