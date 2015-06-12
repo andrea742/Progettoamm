@@ -182,7 +182,7 @@ class UserFactory {
         $venditore->setMail($row['venditori_mail']);
         $venditore->setIndirizzo($row['venditori_indirizzo']);
         $venditore->setCitta($row['venditori_citta']);                  
-        $venditore->setCap($row['addettoOrdini_cap']);       
+        $venditore->setCap($row['venditori_cap']);       
         $venditore->setRuolo(User::Cliente);
 
         return $venditore;
