@@ -174,15 +174,15 @@ class UserFactory {
     
    public function creaClienteDaArray($row) {
         $venditore = new Cliente();
-        $venditore->setId($row['venditori_id']); 
-        $venditore->setUsername($row['venditori_username']);
-        $venditore->setPassword($row['venditori_password']);        
-        $venditore->setNome($row['venditori_nome']);    
-        $venditore->setCognome($row['venditori_cognome']);
-        $venditore->setMail($row['venditori_mail']);
-        $venditore->setIndirizzo($row['venditori_indirizzo']);
-        $venditore->setCitta($row['venditori_citta']);                  
-        $venditore->setCap($row['venditori_cap']);       
+        $venditore->setId($row['clienti_id']); 
+        $venditore->setUsername($row['clienti_username']);
+        $venditore->setPassword($row['clienti_password']);        
+        $venditore->setNome($row['clienti_nome']);    
+        $venditore->setCognome($row['clienti_cognome']);
+        $venditore->setMail($row['clienti_mail']);
+        $venditore->setIndirizzo($row['clienti_indirizzo']);
+        $venditore->setCitta($row['clienti_citta']);                  
+        $venditore->setCap($row['clienti_cap']);       
         $venditore->setRuolo(User::Cliente);
 
         return $venditore;
