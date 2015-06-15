@@ -39,9 +39,9 @@ class ClienteController extends BaseController { // questa funzione è da modifi
                 switch ($request["subpage"]) {
 
                    
-                    case 'anagrafica':
-                        $_SESSION['pagina'] = 'anagrafica.php';   //controlla questa pagina, è anche da fare
-                        $vd->setSottoPagina('anagrafica');
+                    case 'i_miei_dati':
+                        $_SESSION['pagina'] = 'i_miei_dati.php';   //controlla questa pagina, è anche da fare
+                        $vd->setSottoPagina('i_miei_dati');
                         break;
 
                    //controlla questo caso 
@@ -52,11 +52,12 @@ class ClienteController extends BaseController { // questa funzione è da modifi
                         $vd->setSottoPagina('ordina');
                         break;*/
 
-                     //controlla questo caso 
-                    case 'elenco_ordini':
-                        $_SESSION['pagina'] = 'elenco_ordini.php'; 
+                     //controlla questo caso
+                    
+                    case 'carrello':
+                        $_SESSION['pagina'] = 'carrello.php'; 
                         $ordini = OrdineFactory::instance()->getOrdiniPerIdCliente($user);
-                        $vd->setSottoPagina('elenco_ordini');
+                        $vd->setSottoPagina('carrello');
                         break;                    
 
                      //controlla questo caso 
@@ -84,7 +85,7 @@ class ClienteController extends BaseController { // questa funzione è da modifi
                         break;
                         
 						//controlla questo caso
-                    case 'procedi_ordine':
+                    case 'procedi_ordine': //da togliere?
                         
                         $vd->setSottoPagina('conferma_ordine');
                         $msg = array();

@@ -34,19 +34,29 @@ class VenditoreController extends BaseController { //controlla il nome della cla
 
                     
                    //controlal questo caso
-                    case 'anagrafica':
-                        $_SESSION['pagina'] = 'anagrafica.php';   
-                        $vd->setSottoPagina('anagrafica');
+                    case 'i_miei_dati':
+                        $_SESSION['pagina'] = 'i_miei_dati.php';   
+                        $vd->setSottoPagina('i_miei_dati');
+                        break;
+                    
+                    case 'contatti':
+                        $_SESSION['pagina'] = 'contatti.php';  
+                        $vd->setSottoPagina('contatti');
+                        break;
+                    
+                    case 'metti_in_vendita':
+                        $_SESSION['pagina'] = 'metti_in_vendita.php';  
+                        $vd->setSottoPagina('metti_in_vendita');
                         break;
                     
                     //controlal questo caso
-                    case 'gestione_ordini':
-                        $_SESSION['pagina'] = 'gestione_ordini.php';
+                    case 'le_mie_vendite':
+                        $_SESSION['pagina'] = 'le_mie_vendite.php';
                         $ordini = OrdineFactory::instance()->getOrdiniNonPagati();
-                        $vd->setSottoPagina('gestione_ordini');
+                        $vd->setSottoPagina('le_mie_vendite');
                         break;
                     
-                  //controlal questo caso
+                  //controlal questo caso // da togliere?
                     case 'ricerca_ordini':
                         $_SESSION['pagina'] = 'ricerca_ordini.php';
                         $orari = OrarioFactory::instance()->getOrari();
