@@ -3,5 +3,5 @@
     Accesso al sistema.
 </p>
 <p>
-    Autenticarsi tramite l'apposito modulo per poter usufruire delle funzioni del sito della pizzeria.
+    Autenticarsi tramite l'apposito modulo per accedere a Purchase.it.
 </p>
