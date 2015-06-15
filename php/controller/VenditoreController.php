@@ -39,10 +39,7 @@ class VenditoreController extends BaseController { //controlla il nome della cla
                         $vd->setSottoPagina('i_miei_dati');
                         break;
                     
-                    case 'contatti':
-                        $_SESSION['pagina'] = 'contatti.php';  
-                        $vd->setSottoPagina('contatti');
-                        break;
+                   
                     
                     case 'metti_in_vendita':
                         $_SESSION['pagina'] = 'metti_in_vendita.php';  

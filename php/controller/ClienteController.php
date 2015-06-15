@@ -61,10 +61,7 @@ class ClienteController extends BaseController { // questa funzione è da modifi
                         break;                    
 
                      //controlla questo caso 
-                    case 'contatti':
-                        $_SESSION['pagina'] = 'contatti.php';  
-                        $vd->setSottoPagina('contatti');
-                        break;
+                   
                     
                     default:
                         $_SESSION['pagina'] = 'home.php';    
