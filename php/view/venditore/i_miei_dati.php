@@ -12,7 +12,7 @@
 </div>
 
 <div class="input-form">
-    <h3>Indirizzo</h3>
+    
 
     <form method="post" action="cliente/i_miei_dati">
         <input type="hidden" name="cmd" value="indirizzo"/>
@@ -23,7 +23,7 @@
         
         
                 
-        <input type="submit" value="Salva"/>
+        
     </form>
 </div>
 

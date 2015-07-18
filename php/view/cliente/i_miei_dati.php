@@ -28,7 +28,7 @@
         
         
                 
-        <input type="submit" value="Salva"/>
+        
     </form>
 </div>
 

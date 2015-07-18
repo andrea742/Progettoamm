@@ -29,7 +29,7 @@ switch ($vd->getSottoPagina()) {
                     
                     <td class="noRighe">
                     <h4>I miei dati</h4>
-                    <p><i>permette di consultare e modificare la propria anagrafica</i></p>
+                    <p><i>permette di consultare la propria anagrafica</i></p>
                 </td>
                     
                     </tr>
