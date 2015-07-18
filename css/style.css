@@ -67,8 +67,14 @@
     }
     
     #menuTop li.riga{
-        
-        border-right: 1000px solid #ad0000;
+        margin-top: 40px;
+        margin-left: 15%;
+        margin-right: 10%;
+        padding-bottom: 10px;
+        padding-left: 20%;
+        min-height: 500px;
+        position: static;
+        border-right: 1px solid #ad0000;
     }
 
     #content {
