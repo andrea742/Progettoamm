@@ -1,18 +1,16 @@
     body {
-        background-color: #a9e8db; //blu chiaro
-        font: 15px Trebuchet MS;
+        background-color: #f4f6e2;
+        font: 13px/20px "Open Sans",Arial,sans-serif;
 
     }
     header {
-        background-image: url('../images/logo.PNG');
+        background-image: url('../images/logo.png');
         background-repeat: no-repeat;
-        background-color: #ebe4e4;
-        padding-top: 0px ;
-        padding-bottom: 0px ;
-        height: 170px;
+        background-color: #990000;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        height: 180px;
         width: 1000px;
-        
-        
         box-shadow: 0 0 10px rgba(0,0,0,.2);
 
     }
@@ -20,33 +18,25 @@
     #header{       
             background-repeat: no-repeat;
             background-position: center left;
-            padding-left: 20px ;
-            padding-right: 20px ;  
-            
-            
+            padding-left: 20px;
+            padding-right: 20px;        
     }
     
     #page {
-        //background-image: url('../images/pageBG.png');
+        background-image: url('../images/pageBG.png');
         background-repeat: repeat-x;
-        background-color: #eaed9a; //giallino #eaed9a
-        width: 1000px;
+        background-color: #f1f1d3;
+        width: 900px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 25px;
         margin-bottom:25px;
         box-shadow: 0 0 10px rgba(0,0,0,.2);
-        
-        border-radius: 12px;
-	border-top: 4px groove #ebe4e4;
-	border-left: 4px groove #ebe4e4;
-	border-right: 4px ridge #ebe4e4;
-	border-bottom: 4px ridge #ebe4e4;
 
     }
 /*controllo menu superiore*/
     #menu{
-        margin-top: 200px;
+        margin-top: 155px;
         display: inline-block;
         color: white;
         list-style: none;
@@ -63,11 +53,10 @@
     }
 
     #menu a:link, #menu a:visited{
-        color: blue;
+        color: white;
     }
     
     #menuTop li.riga{
-        
         border-right: 1px solid #ad0000;
     }
 
@@ -91,7 +80,7 @@
     }
     
     #footer{
-    background-color: #ebe4e4;
+    background-color: #990000;
     padding: 10px;
     padding-bottom: 10px;
     color: white;
@@ -109,14 +98,14 @@
 
 
     #logout{
-        margin-left: 50px;
+        margin-left: 600px;
         position: absolute; 
-        color: black;
+        color: white;
     }
     
     p.logout a:link, p.logout a:visited{
         padding-left: 18px;
-        color: red;
+        color: orange;
         
     }
     
@@ -126,7 +115,7 @@
     
  /* gestione stile logout */
     .logout p{
-        margin: 15px;
+        margin: 10px;
         float: left;
     }
 
@@ -161,16 +150,21 @@
     
     input[type=submit], button{
     color: #FFFFFF;
-    background-color: #2200FF;
+    background-color: #990000;
     height: 2em;
     font-weight: bold;
-    min-width: 150px;
+    border-radius: 1em;
+    border: 1px solid #ad0000;
+    min-width: 100px;
     margin-bottom: 10px;
     margin-top: 5px;
 
     }
     
-    
+    input[type=submit]:hover, button:hover{
+	background:linear-gradient(to top, #ad0000 5%, #990000 100%);
+        background-color:#ad0000;
+    }
     
     
     .input-form{
