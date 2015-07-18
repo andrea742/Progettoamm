@@ -32,16 +32,3 @@
     </form>
 </div>
 
-<div class="input-form">
-    <h3>Password</h3>
-    <form method="post" action="cliente/i_miei_dati">
-        <input type="hidden" name="cmd" value="password"/>
-        <label for="pass1">Nuova Password</label>
-        <input type="password" name="pass1" id="pass1"/>
-        <br/>
-        <label for="pass2">Conferma</label>
-        <input type="password" name="pass2" id="pass2"/>
-        <br/>
-        <input type="submit" value="Cambia"/>
-    </form>
-</div>
