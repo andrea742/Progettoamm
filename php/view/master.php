@@ -47,7 +47,7 @@ if (!$vd->isJson()) {
                 <div id="sidebar1">
                     <ul>
                         
-                            //<?php
+                            <?php
                             //$left = $vd->getLeftBarFile();
                             //require "$left";
                             ?>
