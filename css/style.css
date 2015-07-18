@@ -108,14 +108,14 @@
 
 
     #logout{
-        margin-left: 600px;
+        margin-left: 50px;
         position: absolute; 
-        color: white;
+        color: black;
     }
     
     p.logout a:link, p.logout a:visited{
         padding-left: 18px;
-        color: orange;
+        color: red;
         
     }
     
