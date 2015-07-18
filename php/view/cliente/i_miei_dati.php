@@ -17,9 +17,7 @@
         <label for="mail">Indirizzo mail</label>
         <input type="text" name="mail" id="via" value="<?= $user->getMail() ?>"/>
         <br>
-        <label for="cap">CAP</label>
-        <input type="text" name="cap" id="cap" value="<?= $user->getCap() ?>"/>
-        <label for="indirizzo">Citta</label>
+        <label for="citta">Citta</label>
         <input type="text" name="indirizzo" id="via" value="<?= $user->getCitta() ?>"/>
         <br>
         <br/>
