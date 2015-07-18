@@ -6,7 +6,7 @@
     header {
         background-image: url('../images/logo.PNG');
         background-repeat: no-repeat;
-        background-color: #eaed9a; // giallo il vechio #ebe4e4 
+        background-color: #ebe4e4;
         padding-top: 0px ;
         padding-bottom: 0px ;
         height: 170px;
@@ -29,7 +29,7 @@
     #page {
         background-image: url('../images/pageBG.png');
         background-repeat: repeat-x;
-        background-color: #ebe4e4;
+        background-color: #eaed9a;
         width: 1000px;
         margin-left: auto;
         margin-right: auto;
