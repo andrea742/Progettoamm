@@ -1,16 +1,16 @@
-    body {
-        background-color: #a9e8db; //blu chiaro
-        font: 15px Trebuchet MS;
+body {
+        background-color: #f4f6e2;
+        font: 13px/20px "Open Sans",Arial,sans-serif;
 
     }
     header {
-        background-image: url('../images/logo.PNG');
+        background-image: url('../images/logo.png');
         background-repeat: no-repeat;
         background-color: #990000;
         padding-top: 0px;
         padding-bottom: 20px;
-        height: 180px;
-        width: 1000px;
+        height: 175px;
+        width: 900px;
         box-shadow: 0 0 10px rgba(0,0,0,.2);
 
     }
