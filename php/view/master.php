@@ -44,17 +44,17 @@ if (!$vd->isJson()) {
                 <!-- start page -->
                 
                 <!--  sidebar sinistra -->
-                /*<div id="sidebar1">
-                    <ul>
-                        <li id="categories">
-                            <?php
-                            $left = $vd->getLeftBarFile();
-                            require "$left";
+                //<div id="sidebar1">
+                    //<ul>
+                       // <li id="categories">
+                            //<?php
+                            //$left = $vd->getLeftBarFile();
+                            //require "$left";
                             ?>
-                        </li>
+                        //</li>
 
-                    </ul>
-                </div>*/
+                  //  </ul>
+               // </div>
 
                 <!-- contenuto pagina-->
                 <div id="content">
