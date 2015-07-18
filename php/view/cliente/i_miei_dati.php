@@ -1,4 +1,4 @@
-
+<div>
     <br>
     <br>
     <h2>I tuoi dati:</h2>
@@ -6,7 +6,7 @@
     <li><strong>Nome:</strong> <?= $user->getNome() ?></li>
     <li><strong>Cognome:</strong> <?= $user->getCognome() ?></li>
 </ul>
-
+</div>
 
 <div class="input-form">
     <h3>Indirizzo</h3>

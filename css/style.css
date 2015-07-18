@@ -46,7 +46,7 @@
     }
 /*controllo menu superiore*/
     #menu{
-        margin-top: 200px;
+        margin-top: 0px;
         display: inline-block;
         color: white;
         list-style: none;
