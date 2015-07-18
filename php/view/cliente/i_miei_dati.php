@@ -2,10 +2,13 @@
     <br>
     <br>
     <h2>I tuoi dati:</h2>
-<ul>
-    <li><strong>Nome:</strong> <?= $user->getNome() ?></li>
-    <li><strong>Cognome:</strong> <?= $user->getCognome() ?></li>
-</ul>
+    <br>
+
+    <strong>Nome:</strong> <?= $user->getNome() ?>
+    <br>
+    <strong>Cognome:</strong> <?= $user->getCognome() ?>
+    <br>
+
 </div>
 
 <div class="input-form">
