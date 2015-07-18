@@ -4,7 +4,7 @@
 
     }
     header {
-        background-image: url('../images/logo.PNG');
+        background-image: url('../images/logo.gif');
         background-repeat: no-repeat;
         background-color: #ebe4e4;
         padding-top: 0px;
@@ -26,7 +26,7 @@
         background-image: url('../images/pageBG.png');
         background-repeat: repeat-x;
         background-color: #f1f1d3;
-        width: 900px;
+        width: 1000px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 25px;
