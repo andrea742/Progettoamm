@@ -4,5 +4,4 @@
     <li class="<?= strpos($vd->getSottoPagina(),'le_mie_vendite') !== false ? 'current_page_item' : '' ?>"><a href="cliente/le_mie_vendite">Le mie vendite</a></li>
     <li class="<?= strpos($vd->getSottoPagina(),'ricerca_ordini') !== false ? 'current_page_item' : '' ?>"><a href="cliente/ricerca_ordini">Ricerca ordini</a></li>
     <li class="<?= strpos($vd->getSottoPagina(),'metti_in_vendita') !== false ? 'current_page_item' : '' ?>"><a href="cliente/metti_in_vendita">Metti in vendita</a></li>   
-    <li class="<?= strpos($vd->getSottoPagina(),'contatti') !== false ? 'current_page_item' : '' ?>"><a href="cliente/contatti">Contatti</a></li>
 </ul>
