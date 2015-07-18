@@ -1,12 +1,12 @@
     body {
-        background-color: #ebe4e4;
+        background-color: #a9e8db; //blu chiaro
         font: 15px Trebuchet MS;
 
     }
     header {
         background-image: url('../images/logo.PNG');
         background-repeat: no-repeat;
-        background-color: #ebe4e4;
+        background-color: #eaed9a; // giallo il vechio #ebe4e4 
         padding-top: 0px ;
         padding-bottom: 0px ;
         height: 170px;
