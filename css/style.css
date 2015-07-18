@@ -9,7 +9,7 @@
         background-color: #ebe4e4;
         padding-top: 0px ;
         padding-bottom: 0px ;
-        height: 180px;
+        height: 170px;
         width: 1000px;
         
         
@@ -68,7 +68,7 @@
     
     #menuTop li.riga{
         
-        border-right: 10px solid #ad0000;
+        border-right: 1px solid #ad0000;
     }
 
     #content {
