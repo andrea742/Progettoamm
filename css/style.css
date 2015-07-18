@@ -67,6 +67,7 @@
     }
     
     #menuTop li.riga{
+        margin-top: 10px;
         border-right: 1px solid #ad0000;
     }
 
