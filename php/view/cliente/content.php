@@ -24,12 +24,14 @@ switch ($vd->getSottoPagina()) {
 
         <table class="content">
             <tr>               
-                <td class="noRighe">
-                    <h4>I miei dati</h4>
-                    <p><i>permette di consultare e modificare la propria anagrafica</i></p>
-                </td>     
+                     
                 <td class="noRighe"><a href="cliente/i_miei_dati" title="i miei dati">
                     <img src="../images/i_miei_dati.png" alt="i_miei_dati"></a></td>   
+                    
+                    <td class="noRighe">
+                    <h4>I miei dati</h4>
+                    <p><i>permette di consultare e modificare la propria anagrafica</i></p>
+                </td>
                     
                     </tr>
                      <tr>
@@ -47,12 +49,14 @@ switch ($vd->getSottoPagina()) {
             </tr>
             
             <tr>
-                <td class="noRighe">
-                    <h4>Carrello</h4>
-                    <p><i>Vai al carrello</i></p>  
+                  
  
                <td class="noRighe"><a href="cliente/carrello" title="carrello">
                    <img src="../images/carrello.png" alt="carrello"></a>
+                   
+                   <td class="noRighe">
+                    <h4>Carrello</h4>
+                    <p><i>Vai al carrello</i></p>
                </td>
             </tr>
         </table>
