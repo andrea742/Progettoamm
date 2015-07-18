@@ -160,7 +160,7 @@
     
     input[type=submit], button{
     color: #FFFFFF;
-    background-color: #990000;
+    background-color: #2200FF;
     height: 2em;
     font-weight: bold;
     border-radius: 1em;
@@ -172,7 +172,7 @@
     }
     
     input[type=submit]:hover, button:hover{
-	background:linear-gradient(to top, #ad0000 5%, #990000 100%);
+	background:linear-gradient(to top, #ad0000 5%, #2200FF 100%);
         background-color:#ad0000;
     }
     
