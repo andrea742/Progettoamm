@@ -19,14 +19,14 @@ switch ($vd->getSottoPagina()) {
         
 
     <?php default: ?>
-        <h2>MENÚ</h2>
+        MENU
 
 
         <table class="content">
             <tr>               
                 <td class="noRighe">
                     <h4>I miei dati</h4>
-                    <p><i>permette di consultare e modificare la propria anagrafic<</i></p>
+                    <p><i>permette di consultare e modificare la propria anagrafica</i></p>
                 </td>     
                 <td class="noRighe"><a href="cliente/i_miei_dati" title="i_miei_dati">
                     <img src="../images/i_miei_dati.png" alt="i_miei_dati"></a></td>                    
@@ -36,6 +36,7 @@ switch ($vd->getSottoPagina()) {
                 </td>  
                 <td class="noRighe">
                     <h4>Oggetti in vendita</h4>
+                    <p><i>visualizza tutti gli oggetti in vendita</i></p>
                     
                 </td>
                 </td>               
@@ -43,11 +44,11 @@ switch ($vd->getSottoPagina()) {
             
             <tr>
                 <td class="noRighe">
-                    <h4>Ricerca ordini</h4>
-                    <p><i>ricerca gli ordini relativi a date passate</i></p>  
+                    <h4>Carrello</h4>
+                    <p><i>Vai al carrello</i></p>  
  
-               <td class="noRighe"><a href="addettoOrdini/ricerca_ordini" title="ricerca_ordini">
-                   <img src="../images/ricerca.png" alt="ricerca ordini"></a>
+               <td class="noRighe"><a href="cliente/carrello" title="carrello">
+                   <img src="../images/carrello.png" alt="carrello"></a>
                </td>
             </tr>
         </table>
