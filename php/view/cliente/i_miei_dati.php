@@ -1,5 +1,5 @@
 <div>
-    <h2><p><p><p>I tuoi dati:</h2>
+    <h2><p><p><p><p><p><p>I tuoi dati:</h2>
 <ul>
     <li><strong>Nome:</strong> <?= $user->getNome() ?></li>
     <li><strong>Cognome:</strong> <?= $user->getCognome() ?></li>
