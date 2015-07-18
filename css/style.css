@@ -10,7 +10,7 @@ body {
         padding-top: 0px;
         padding-bottom: 20px;
         height: 175px;
-        width: 900px;
+        width: 1000px;
         box-shadow: 0 0 10px rgba(0,0,0,.2);
 
     }
@@ -26,7 +26,7 @@ body {
         background-image: url('../images/pageBG.png');
         background-repeat: repeat-x;
         background-color: #f1f1d3;
-        width: 900px;
+        width: 1000px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 25px;
