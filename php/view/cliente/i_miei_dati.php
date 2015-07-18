@@ -5,7 +5,7 @@
     <br>
 
     <strong>Nome:</strong> <?= $user->getNome() ?>
-    <br>
+    <br><br>
     <strong>Cognome:</strong> <?= $user->getCognome() ?>
     <br>
 
