@@ -46,7 +46,7 @@
     }
 /*controllo menu superiore*/
     #menu{
-        margin-top: 155px;
+        margin-top: 200px;
         display: inline-block;
         color: white;
         list-style: none;
@@ -63,7 +63,7 @@
     }
 
     #menu a:link, #menu a:visited{
-        color: white;
+        color: blue;
     }
     
     #menuTop li.riga{
@@ -126,7 +126,7 @@
     
  /* gestione stile logout */
     .logout p{
-        margin: 10px;
+        margin: 15px;
         float: left;
     }
 
