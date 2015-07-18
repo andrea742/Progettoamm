@@ -16,6 +16,8 @@ switch ($vd->getSottoPagina()) {
         
 
     <?php default: ?>
+<br>
+<br>
         MENU
 
 
