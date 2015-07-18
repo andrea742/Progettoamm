@@ -14,11 +14,11 @@
         <label for="indirizzo">Indirizzo</label>
         <input type="text" name="indirizzo" id="via" value="<?= $user->getIndirizzo() ?>"/>
         <br>
-        <label for="mail">Indirizzo mail</label>
-        <input type="text" name="mail" id="via" value="<?= $user->getMail() ?>"/>
-        <br>
         <label for="citta">Citta</label>
         <input type="text" name="indirizzo" id="via" value="<?= $user->getCitta() ?>"/>
+        <br>
+        <label for="mail">Indirizzo mail</label>
+        <input type="text" name="mail" id="via" value="<?= $user->getMail() ?>"/>
         <br>
         <br/>
         
