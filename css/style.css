@@ -7,10 +7,16 @@
         background-image: url('../images/logo.PNG');
         background-repeat: no-repeat;
         background-color: #ebe4e4;
-        padding-top: 0px groove;
-        padding-bottom: 0px groove;
+        padding-top: 0px ;
+        padding-bottom: 0px ;
         height: 180px;
         width: 1000px;
+        
+        border-radius: 12px;
+	border-top: 4px groove #ebe4e4;
+	border-left: 4px groove #ebe4e4;
+	border-right: 4px ridge #ebe4e4;
+	border-bottom: 4px ridge #ebe4e4;
        // box-shadow: 0 0 10px rgba(0,0,0,.2);
 
     }
@@ -18,8 +24,8 @@
     #header{       
             background-repeat: no-repeat;
             background-position: center left;
-            padding-left: 20px groove;
-            padding-right: 20px groove;        
+            padding-left: 20px ;
+            padding-right: 20px ;        
     }
     
     #page {
