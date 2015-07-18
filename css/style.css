@@ -1,9 +1,9 @@
-body {
+    body {
         background-color: #a9e8db; //blu chiaro
         font: 15px Trebuchet MS;
 
     }
-    header {
+   header {
         background-image: url('../images/logo.PNG');
         background-repeat: no-repeat;
         background-color: #990000;
@@ -18,14 +18,16 @@ body {
     #header{       
             background-repeat: no-repeat;
             background-position: center left;
-            padding-left: 20px;
-            padding-right: 20px;        
+            padding-left: 20px ;
+            padding-right: 20px ;  
+            
+            
     }
     
     #page {
-        background-image: url('../images/pageBG.png');
+        //background-image: url('../images/pageBG.png');
         background-repeat: repeat-x;
-        background-color: #eaed9a;
+        background-color: #eaed9a; //giallino #eaed9a
         width: 1000px;
         margin-left: auto;
         margin-right: auto;
@@ -42,7 +44,7 @@ body {
     }
 /*controllo menu superiore*/
     #menu{
-        margin-top: 155px;
+        margin-top: 200px;
         display: inline-block;
         color: white;
         list-style: none;
@@ -59,10 +61,11 @@ body {
     }
 
     #menu a:link, #menu a:visited{
-        color: white;
+        color: blue;
     }
     
     #menuTop li.riga{
+        
         border-right: 1px solid #ad0000;
     }
 
@@ -86,7 +89,7 @@ body {
     }
     
     #footer{
-    background-color: #990000;
+    background-color: #ebe4e4;
     padding: 10px;
     padding-bottom: 10px;
     color: white;
@@ -104,14 +107,14 @@ body {
 
 
     #logout{
-        margin-left: 600px;
+        margin-left: 50px;
         position: absolute; 
-        color: white;
+        color: black;
     }
     
     p.logout a:link, p.logout a:visited{
         padding-left: 18px;
-        color: orange;
+        color: red;
         
     }
     
@@ -121,7 +124,7 @@ body {
     
  /* gestione stile logout */
     .logout p{
-        margin: 10px;
+        margin: 15px;
         float: left;
     }
 
@@ -156,21 +159,16 @@ body {
     
     input[type=submit], button{
     color: #FFFFFF;
-    background-color: #990000;
+    background-color: #2200FF;
     height: 2em;
     font-weight: bold;
-    border-radius: 1em;
-    border: 1px solid #ad0000;
-    min-width: 100px;
+    min-width: 150px;
     margin-bottom: 10px;
     margin-top: 5px;
 
     }
     
-    input[type=submit]:hover, button:hover{
-	background:linear-gradient(to top, #ad0000 5%, #990000 100%);
-        background-color:#ad0000;
-    }
+    
     
     
     .input-form{
@@ -298,3 +296,8 @@ body {
         background: url('../images/ok.png') no-repeat left top;
         min-height: 32px;
     }
+
+
+
+
+
