@@ -23,15 +23,20 @@ body {
     }
     
     #page {
-        background-image: url('../images/pageBG.png');
         background-repeat: repeat-x;
-        background-color: #f1f1d3;
+        background-color: #eaed9a; //giallino #eaed9a
         width: 1000px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 25px;
         margin-bottom:25px;
         box-shadow: 0 0 10px rgba(0,0,0,.2);
+        
+        border-radius: 12px;
+	border-top: 4px groove #ebe4e4;
+	border-left: 4px groove #ebe4e4;
+	border-right: 4px ridge #ebe4e4;
+	border-bottom: 4px ridge #ebe4e4;
 
     }
 /*controllo menu superiore*/
