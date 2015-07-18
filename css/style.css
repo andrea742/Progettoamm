@@ -42,9 +42,9 @@ body {
     }
 /*controllo menu superiore*/
     #menu{
-        margin-top: 155px;
+        margin-top: 200px;
         display: inline-block;
-        color: white;
+        color: black;
         list-style: none;
         position: static;
 
@@ -104,9 +104,9 @@ body {
 
 
     #logout{
-        margin-left: 600px;
+        margin-left: 0px;
         position: absolute; 
-        color: white;
+        color: black;
     }
     
     p.logout a:link, p.logout a:visited{
