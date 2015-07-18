@@ -23,8 +23,9 @@ body {
     }
     
     #page {
+        background-image: url('../images/pageBG.png');
         background-repeat: repeat-x;
-        background-color: #eaed9a; //giallino #eaed9a
+        background-color: #eaed9a;
         width: 1000px;
         margin-left: auto;
         margin-right: auto;
