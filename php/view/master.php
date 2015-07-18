@@ -44,7 +44,7 @@ if (!$vd->isJson()) {
                 <!-- start page -->
                 
                 <!--  sidebar sinistra -->
-                <div id="sidebar1">
+                /*<div id="sidebar1">
                     <ul>
                         <li id="categories">
                             <?php
@@ -54,7 +54,7 @@ if (!$vd->isJson()) {
                         </li>
 
                     </ul>
-                </div>
+                </div>*/
 
                 <!-- contenuto pagina-->
                 <div id="content">
