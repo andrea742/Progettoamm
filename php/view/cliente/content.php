@@ -11,10 +11,7 @@ switch ($vd->getSottoPagina()) {
     case 'carrello':
         include 'carrello.php';
         break;  
-    
-    case 'ricerca_ordini_json':
-        include_once 'ricerca_ordini_json.php';
-        break;      
+          
         ?>
         
 
