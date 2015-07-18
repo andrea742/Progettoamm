@@ -28,22 +28,20 @@ switch ($vd->getSottoPagina()) {
                     <h4>I miei dati</h4>
                     <p><i>permette di consultare e modificare la propria anagrafica</i></p>
                 </td>     
-                <td class="noRighe"><a href="cliente/i_miei_dati" title="i_miei_dati">
+                <td class="noRighe"><a href="cliente/i_miei_dati" title="i miei dati">
                     <img src="../images/i_miei_dati.png" alt="i_miei_dati"></a></td>                    
                                              
-                <td class="noRighe"><a href="cliente/oggetti_in_vendita" title="oggetti_in_vendita">
+                <td class="noRighe"><a href="cliente/oggetti_in_vendita" title="oggetti in vendita">
                     <img src="../images/oggetti_in_vendita.png" alt="gestione ordini"></a>
-                </td>  
-                <tr>
+                </td>
+                
                 <td class="noRighe">
                     <h4>Oggetti in vendita</h4>
                     <p><i>visualizza tutti gli oggetti in vendita</i></p>
                     
                 </td>
                 </td>               
-            </tr>
             
-            <tr>
                 <td class="noRighe">
                     <h4>Carrello</h4>
                     <p><i>Vai al carrello</i></p>  
