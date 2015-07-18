@@ -34,6 +34,7 @@ switch ($vd->getSottoPagina()) {
                 <td class="noRighe"><a href="cliente/oggetti_in_vendita" title="oggetti_in_vendita">
                     <img src="../images/oggetti_in_vendita.png" alt="gestione ordini"></a>
                 </td>  
+                <tr>
                 <td class="noRighe">
                     <h4>Oggetti in vendita</h4>
                     <p><i>visualizza tutti gli oggetti in vendita</i></p>
