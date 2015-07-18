@@ -29,7 +29,10 @@ switch ($vd->getSottoPagina()) {
                     <p><i>permette di consultare e modificare la propria anagrafica</i></p>
                 </td>     
                 <td class="noRighe"><a href="cliente/i_miei_dati" title="i miei dati">
-                    <img src="../images/i_miei_dati.png" alt="i_miei_dati"></a></td>                    
+                    <img src="../images/i_miei_dati.png" alt="i_miei_dati"></a></td>   
+                    
+                    </tr>
+                     <tr>
                                              
                 <td class="noRighe"><a href="cliente/oggetti_in_vendita" title="oggetti in vendita">
                     <img src="../images/oggetti_in_vendita.png" alt="gestione ordini"></a>
@@ -41,7 +44,9 @@ switch ($vd->getSottoPagina()) {
                     
                 </td>
                 </td>               
+            </tr>
             
+            <tr>
                 <td class="noRighe">
                     <h4>Carrello</h4>
                     <p><i>Vai al carrello</i></p>  
