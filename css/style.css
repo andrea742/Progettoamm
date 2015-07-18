@@ -48,7 +48,7 @@
     #menu{
         margin-top: 155px;
         display: inline-block;
-        color: black;
+        color: white;
         list-style: none;
         position: static;
 
@@ -68,7 +68,7 @@
     
     #menuTop li.riga{
         
-        border-right: 1px solid #ad0000;
+        border-right: 10px solid #ad0000;
     }
 
     #content {
