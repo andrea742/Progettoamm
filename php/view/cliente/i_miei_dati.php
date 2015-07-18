@@ -19,6 +19,9 @@
         <br>
         <label for="cap">CAP</label>
         <input type="text" name="cap" id="cap" value="<?= $user->getCap() ?>"/>
+        <label for="indirizzo">Citta</label>
+        <input type="text" name="indirizzo" id="via" value="<?= $user->getCitta() ?>"/>
+        <br>
         <br/>
         
         <br/>        
