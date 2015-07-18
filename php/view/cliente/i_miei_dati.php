@@ -4,9 +4,9 @@
     <h2>I tuoi dati:</h2>
     <br>
 
-    <p><strong>Nome:</strong> <?= $user->getNome() ?></p>
+    <strong>Nome:</strong> <?= $user->getNome() ?>
     <br><br>
-    <p><strong>Cognome:</strong> <?= $user->getCognome() ?></p>
+    <strong>Cognome:</strong> <?= $user->getCognome() ?>
     <br>
 
 </div>
