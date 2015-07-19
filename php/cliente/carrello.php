@@ -86,7 +86,7 @@
                         
                         <a href="oggettiinvendita.php?rimuovi=<?echo $vis->id?>" id="button">Rimuovi dal carrello</a>
 
-			<a href="carrello.php?conferma=<?echo $vis->id?>" onclick="window.open('https://www.paypal.com/it/webapps/mpp/home')" id="button" style="background-color:green">Conferma auto</a>
+			
 
                         </div> 
 
