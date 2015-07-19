@@ -31,7 +31,7 @@
                         <li><a href="oggettiinvendita.php" id="oggettiinvendita">Oggetti in vendita</a></li>
                         
                         <li class="current_page"><a href="#" id="ricerca">Ricerca</a></li>
-                        <li><a href="cliente/carrelloa.php" id="ricerca">Carrello</a></li>
+                        <li><a href="carrelloa.php" id="ricerca">Carrello</a></li>
                         <li><a href="../../php/logout.php" id="logout">Logout</a></li>
                     </ul>
                 </div>
