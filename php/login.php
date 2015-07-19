@@ -19,9 +19,9 @@ $_SESSION["username"]=$_POST["username"];
 
 $_SESSION["password"]=$_POST["password"]; 
 
-$queryven = mysql_query("SELECT * FROM venditori WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='venditore'") or DIE('query non riuscita'.mysql_error());
+$queryven = mysql_query("SELECT * FROM utenti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='venditore'") or DIE('query non riuscita'.mysql_error());
 
-$querycli = mysql_query("SELECT * FROM clienti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='cliente'") or DIE('query non riuscita'.mysql_error());
+$querycli = mysql_query("SELECT * FROM utenti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='cliente'") or DIE('query non riuscita'.mysql_error());
 
 if(mysql_num_rows($queryven))
 {   
