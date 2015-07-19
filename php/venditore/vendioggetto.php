@@ -85,7 +85,7 @@
 		<h3>Vendi il tuo oggetto:</h3>
 		
                 <form action="vendioggetto.php?aggiungi" method="post" id="form-login">
-                	br>Marca: <input type="text" name="marca"><br>
+                	<br>Marca: <input type="text" name="marca"><br>
                 	<br>Modello:<input type="text" name="modello"><br>
                         <br>Condizioni:
                 	                            <input type="radio" name="condizioni" value="nuovo" checked>Nuovo
