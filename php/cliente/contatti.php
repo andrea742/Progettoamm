@@ -7,7 +7,7 @@
 			if(history.length>0)history.forward()
 		</script>
 		
-                <title>AMMacchina</title>
+                <title>Purchase.it - Contatti</title>
         	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         	<link rel="stylesheet" type="text/css" href="../../css/style.css">
         	<link rel="shortcut icon" href="../../img/icona.ico">
@@ -20,7 +20,7 @@
                 <header>
                 
                     <div style="text-align: center" id="header">
-                        <img src="../../img/1500.png" alt="" width="600" height="250"/>
+                        <img src="../../img/logo.PNG" alt="" width="750" height="135"/>
                     </div>
                     
                 <div style="text-align: center" id="top">

@@ -7,7 +7,7 @@
 			if(history.length>0)history.forward()
 		</script>
         
-                <title>Purchase.it</title>
+                <title>Purchase.it - Vendi</title>
         	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         	<link rel="stylesheet" type="text/css" href="../../css/style.css">
         	<link rel="shortcut icon" href="../../img/icona.ico">
@@ -20,7 +20,7 @@
                 <header>
                 
                     <div style="text-align: center" id="header">
-                        <img src="img/logo.PNG" alt="" width="750" height="135"/>
+                        <img src="../../img/logo.PNG" alt="" width="750" height="135"/>
                     </div>
                     
                 <div style="text-align: center" id="top">

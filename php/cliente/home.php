@@ -7,7 +7,7 @@
 			if(history.length>0)history.forward()
 		</script>
 		
-                <title>Purchase.it</title>
+                <title>Purchase.it - Home</title>
         	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         	<link rel="stylesheet" type="text/css" href="../../css/style.css">
         	<link rel="shortcut icon" href="../../img/icona.ico">
