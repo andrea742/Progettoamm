@@ -73,11 +73,12 @@
                    
                     <img src="../../img/oggetti_in_vendita.png" width="100" height="70" alt="">
                    
-                <?echo"$vis->marca";?>
-                <?echo"$vis->modello";?>,
-                <?echo"$vis->condizioni";?>,
-                <b>PREZZO : </b><?echo"$vis->prezzo";?>
-                <?echo"$vis->categoria";?>, 
+                Marca : <?echo"$vis->marca";?> ||
+                	Modello: <?echo"$vis->modello";?> ||
+                	Condizioni:<?echo"$vis->condizioni";?> ||
+                	Prezzo: <?echo"$vis->prezzo";?>
+                	
+                	Euro ||  Categoria: <?echo"$vis->categoria";?> ||
                 
                 
                 <a href="oggettiinvendita.php?rimuovi=<?echo $vis->id?>" id="button">Elimina oggetto</a>
