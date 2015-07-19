@@ -72,11 +72,11 @@
                     <img src="../../img/oggetti_in_vendita.png" width="100" height="70" alt="">
                 	
                 	Marca : <?echo"$vis->marca";?>
-                	\nModello: <?echo"$vis->modello";?>,
-                	\nCondizioni:<?echo"$vis->condizioni";?>,
-                	\nPrezzo: <?echo"$vis->prezzo";?>, 
+                	Modello: <?echo"$vis->modello";?>
+                	Condizioni:<?echo"$vis->condizioni";?>
+                	Prezzo: <?echo"$vis->prezzo";?> 
                 	
-                	Euro \n Categoria<?echo"$vis->categoria";?>, 
+                	Euro, \n Categoria<?echo"$vis->categoria";?> 
                 	
                         <a href="oggettiinvendita.php?aggiungi=<?echo $vis->id?>" id="button">Aggiungi al carrello</a>
                 	
