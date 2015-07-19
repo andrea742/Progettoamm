@@ -79,8 +79,8 @@
                 <b>PREZZO : </b><?echo"$vis->prezzo";?>
                 <?echo"$vis->categoria";?>, 
                 
+                <a href="oggettiinvendita.php?aggiungi=<?echo $vis->id?>" id="button">Aggiungi al carrello</a>
                 
-                <a href="oggettiinvendita.php?rimuovi=<?echo $vis->id?>" id="button">Elimina oggetto</a>
 
         </div> 
                 
