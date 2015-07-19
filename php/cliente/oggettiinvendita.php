@@ -91,7 +91,7 @@
                 if(isset($_GET["aggiungi"]))
                 {
                 	$idoggetto = $_GET["aggiungi"];
-			$querypresagg = mysql_query("INSERT INTO carrello(indice, $idoggetto) VALUES (indice,$idoggetto)") or die('Query non riuscita'.mysql_error());
+			$querypresagg = mysql_query("INSERT INTO carrello(indice, idoggetto) VALUES (indice,$idoggetto)") or die('Query non riuscita'.mysql_error());
                 }
                             
                 if(isset($_GET["rimuovi"]) && ($_GET["rimuovi"]!=0))
