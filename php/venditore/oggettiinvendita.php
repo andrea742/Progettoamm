@@ -89,7 +89,7 @@
                             
                 if(isset($_GET["rimuovi"]))
                 {
-                $idauto = $_GET["rimuovi"];
+                $idoggetto = $_GET["rimuovi"];
 		$querypres = mysql_query("DELETE FROM oggetti WHERE id='$idoggetto'") or die('Query non riuscita'.mysql_error());
                 }
 		?>
