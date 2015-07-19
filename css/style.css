@@ -1,3 +1,13 @@
+h2 {
+  color: #F58529;
+  font-size: 140%;
+  padding: 10px 20px;
+  background-color: #000;
+  margin: 10px 20px;
+  position: relative;
+}
+
+
 body {
         background-color: #44cf80; 
         font: 15px Trebuchet MS;
