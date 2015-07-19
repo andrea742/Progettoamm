@@ -31,7 +31,7 @@
                         	<li class="current_page"><a href="#" id="home">Home</a></li>
                         	<li><a href="venditore/oggettiinvendita.php" id="oggettiinvendita">Oggetti in vendita</a></li>
                         	<li><a href="venditore/vendioggetto.php" id="vendioggetto">Vendi un oggetto</a></li>
-                        	<li><a href="venditore/ricerca.php" id="ricerca">Ricerca</a></li>
+                        	
                         	<li><a href="../php/logout.php" id="logout">Logout</a></li>
                     	</ul>
                 	</div>
