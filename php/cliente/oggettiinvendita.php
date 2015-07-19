@@ -56,7 +56,7 @@
             	{
                 	die("Errore: selezione del database errata ".mysql_error());
             	}
-            	$query = mysql_query("SELECT * FROM oggetti WHERE condizioni='usato' OR stato='nuovo'") or die("query non riuscita".mysql_error());
+            	$query = mysql_query("SELECT * FROM oggetti WHERE condizioni='usato' OR condizioni='nuovo'") or die("query non riuscita".mysql_error());
             	$vis = mysql_fetch_object($query);
                 ?>
                 
