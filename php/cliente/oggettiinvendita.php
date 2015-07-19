@@ -3,12 +3,11 @@
 <html>
 
         <head>
-        
-            	<script language="javascript">
+            	<script language="JavaScript">
 			if(history.length>0)history.forward()
 		</script>
         
-                <title>Purchase.it - oggetti in vendita</title>
+                <title>Purchase.it - Compra</title>
         	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         	<link rel="stylesheet" type="text/css" href="../../css/style.css">
         	<link rel="shortcut icon" href="../../img/icona.ico">
@@ -17,11 +16,11 @@
 	<body>
 	
         <div id="page">
-                    
+                
                 <header>
                 
                     <div style="text-align: center" id="header">
-                        <img src="../../img/logo.PNG" alt="" width="750" height="135"/>
+                         <img src="../../img/logo.PNG" alt="" width="750" height="135"/>
                     </div>
                     
                 <div style="text-align: center" id="top">
@@ -30,13 +29,13 @@
                     <ul>
                         <li><a href="home.php" id="home">Home</a></li>
                         <li class="current_page"><a href="#" id="oggettiinvendita">Oggetti in vendita</a></li>
-                        <li><a href="carrello.php" id="ricerca">Carrello</a></li>
+                        <li><a href="carrello.php" id="carrello">Carrello</a></li>
                         <li><a href="ricerca.php" id="ricerca">Ricerca</a></li>
                         <li><a href="../../php/logout.php" id="logout">Logout</a></li>
                     </ul>
                 </div>
 		</div>
-
+		    
                 </header>
                 
                 <div style="text-align: center">
@@ -52,51 +51,59 @@
                 {
                 	die("Errore: connessione non riuscita".mysql_error());
             	}
-            	$db_selected = mysql_select_db("amm14_sabiuAndrea", $connessione_al_server);
+            	$db_selected = mysql_select_db("amm14_andreaSabiu", $connessione_al_server);
             	if(!$db_selected)
             	{
                 	die("Errore: selezione del database errata ".mysql_error());
             	}
-            	$query = mysql_query("SELECT * FROM oggetti WHERE condizioni='usato' OR condizioni='nuovo'") or die("query non riuscita".mysql_error());
+            	$query = mysql_query("SELECT * FROM oggetti WHERE condizioni='usato' OR stato='nuovo'") or die("query non riuscita".mysql_error());
             	$vis = mysql_fetch_object($query);
                 ?>
-
+                
             	<?php
             	while($vis = mysql_fetch_object($query))
             	{
             	?>
-
+            
              	<br>
 
-                   
-                <div style="text-align: center">
+              	<div style="text-align: center">
                    
                     <img src="../../img/oggetti_in_vendita.png" width="100" height="70" alt="">
-                   
-                <?echo"$vis->marca";?>
-                <?echo"$vis->modello";?>,
-                <?echo"$vis->condizioni";?>,
-                <b>PREZZO : </b><?echo"$vis->prezzo";?>
-                <?echo"$vis->categoria";?>, 
-                
-                <a href="oggettiinvendita.php?aggiungi=<?echo $vis->id?>" id="button">Aggiungi al carrello</a>
-                
-
-        </div> 
+                	
+                	<?echo"$vis->marca";?>
+                	<?echo"$vis->modello";?>,
+                	<?echo"$vis->condizioni";?>,
+                	<?echo"$vis->prezzo";?>, 
+                	
+                	<?echo"$vis->categoria";?>, 
+                	
+                        <a href="oggettiinvendita.php?aggiungi=<?echo $vis->id?>" id="button">Aggiungi al carrello</a>
+                	
+                </div> 
                 
               	<?php
                 }
-                            
-                if(isset($_GET["rimuovi"]))
+                ?>
+                
+                <?php
+
+                if(isset($_GET["aggiungi"]))
                 {
-                $idauto = $_GET["rimuovi"];
-		$querypres = mysql_query("DELETE FROM oggetti WHERE id='$idoggetto'") or die('Query non riuscita'.mysql_error());
+                	$idauto = $_GET["aggiungi"];
+			$querypresagg = mysql_query("INSERT INTO carrello(indice, idoggetto) VALUES (indice,$idoggetto)") or die('Query non riuscita'.mysql_error());
+                }
+                            
+                if(isset($_GET["rimuovi"]) && ($_GET["rimuovi"]!=0))
+                {
+                        $idauto = $_GET["rimuovi"];
+			$querypres = mysql_query("DELETE FROM carrello WHERE idoggetto='$idoggetto'") or die('Query non riuscita'.mysql_error());
                 }
 		?>
- 
-	<br>
-	<br>
-                
+
+		<br>
+		<br>
+
         
         </div>
 
