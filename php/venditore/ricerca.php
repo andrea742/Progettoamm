@@ -50,7 +50,7 @@
             	{
                 	die("Errore: selezione del database errata ".mysql_error());
             	}
-            	$query = mysql_query("SELECT * FROM oggetti") or die("query non riuscita".mysql_error());
+            	$query = mysql_query("SELECT * FROM oggetti WHERE condizioni='usato'") or die("query non riuscita".mysql_error());
             	$vis = mysql_fetch_object($query);
                 if(isset($_GET["ricercaoggetto"]))
 		{
@@ -59,7 +59,7 @@
                                 $_SESSION["condizioni"] = $_POST["condizioni"];
                                 $_SESSION["prezzo"] = $_POST["prezzo"];
                                 $_SESSION["categoria"] = $_POST["categoria"];
-                                
+                                $aux = "WHERE condizioni ='usato'";
                                 if($_SESSION["marca"] !="")
                                     $aux .= " AND marca ='".$_SESSION["marca"]."'";
                                 if($_SESSION["modello"] !="")
@@ -96,14 +96,14 @@
 
 		<div style="text-align: center">
 		
-		<h3>Ricerca oggetti:</h3>
+		<h3>Ricerca oggetti usati:</h3>
 		
 		<form action="ricerca.php?ricercaoggetto" method="post" id="form-login">
                 	<br>Marca: <input type="text" name="marca"><br>
                 	<br>Modello:<input type="text" name="modello"><br>
                         <br>Condizioni:
-                	                            <input type="radio" name="condizioni" value="nuovo" checked>Nuovo
-                	                            <input type="radio" name="condizioni" value="usato">Usato
+                	                            
+                	                            <input type="radio" name="condizioni" value="usato" checked>Usato
                                            
                        <br><br>Prezzo:<input type="number" name="prezzo" min="0"><br>
                 	                         
