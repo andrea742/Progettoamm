@@ -40,7 +40,7 @@
        <h2>Ruolo Cliente</h2>
        
        <h3>  
-       Questa pagina &egrave la pagina dedicata al ruolo cliente, da qua potrai fare acquisti inserendo nuovi articoli
+       <br><br><br><br>Questa pagina &egrave la pagina dedicata al ruolo cliente, da qua potrai fare acquisti inserendo nuovi articoli
        all'interno del tuo carrello e qualora non sia convinto di volerlo acquistare potrai rimuoverlo in qualsiasi
        momento grazie alla funzione "Rimuovi dal carrello". <br><br><br><br> Non trovi l'articolo che stai cercando nella sezione 
        "Oggetti in vendita"? <br><br> Nessun problema, utilizza la funzione cerca per vedere se il venditore mette a disposizione
