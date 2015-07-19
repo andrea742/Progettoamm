@@ -1,48 +1,25 @@
-ammacchina
+Benvenuto su Purchase.it
 
-==================================================================================================================
+Progetto AMM di Sabiu Andrea
 
-SITO PROGETTO AMM 2014 SIMONE MAMELI 
+Si tratta di un sito e-commerce che permette l'acquisto di un qualsiasi tipo di oggetto in maniera facile, gratuita e veloce.
 
-==================================================================================================================
 
-Descrizione
+Esistono 2 tipi di utenti:
 
-L'applicazione gestisce le funzionalità di un autoconcessionario. Gli utenti sono divisi in clienti e dipendenti.
+> Cliente
+> Venditore
 
-I dipendenti possono:
+Per accedere al progetto andare su:  http://spano.sc.unica.it/amm2014/sabiuAndrea/
 
-1. Visualizzare il parco auto
-2. Aggiungere veicoli al parco auto
-3. Rimuovere veicoli dal parco auto
-4. Ricercare veicolo nel parco auto
-5. Modificare pagina promemoria
+>>Credenziali per accesso al sito:<<
 
-I clienti possono:
+>>Cliente:
+        
+            user: cliente
+            password: cliente
 
-1. Visualizzare il parco auto
-2. Acquistare auto
-3. Ricercare veicolo nel parco auto
-4. Modificare il proprio carrello
-5. Acquistare in sicurezza
+>>Venditore:
 
-Requisiti soddisfatti
-
-Utilizzo di HTML e CSS : V
-Utilizzo di PHP e MySQL : V
-Due ruoli (cliente e dipendente) : V
-
-Sito accettato dal W3C HTML : V
-Sito accettato dal W3C CSS  : V
-
-CREDENZIALI
-
-Dipendente
-  username  : -
-  passoword : -
-  
-Cliente
-  username  : -
-  passoword : -
-
-==================================================================================================================
+            user: venditore
+            password: venditore
