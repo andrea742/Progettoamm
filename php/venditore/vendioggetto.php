@@ -94,10 +94,10 @@
                        <br><br>Prezzo:<input type="number" name="prezzo" min="0"><br>
                 	                         
                 	<br>Categoria:
-                	                            <input type="radio" name="Categoria" value="elettronica" checked>Elettronica
-                	                            <input type="radio" name="Categoria" value="abbigliamento" checked>Abbigliamento
-                                                    <input type="radio" name="Categoria" value="veicoli" checked>Veicoli
-                                                    <input type="radio" name="Categoria" value="informatica" checked>Informatica
+                	                            <input type="radio" name="Categoria" value="elettronica" >Elettronica
+                	                            <input type="radio" name="Categoria" value="abbigliamento" >Abbigliamento
+                                                    <input type="radio" name="Categoria" value="veicoli" >Veicoli
+                                                    <input type="radio" name="Categoria" value="informatica" >Informatica
                                                     <input type="radio" name="Categoria" value="altro" checked>Altro            
 	
                 	<br><input type="submit" value="Aggiungi" id="button"><br>
