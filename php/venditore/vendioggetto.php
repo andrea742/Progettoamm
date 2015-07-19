@@ -59,7 +59,7 @@
                                 $_SESSION["prezzo"] = $_POST["prezzo"];
                                 $_SESSION["categoria"] = $_POST["categoria"];
                                     
-                                $query = "INSERT INTO oggetti (marca,modello,condizioni,prezzo,categoria) VALUES (\"".$_POST["marca"]."\",\"".$_POST["modello"]."\",\"".$_POST["condizioni"]."\",\"".$_POST["prezzo"]."\",\"".$_POST["c"]."\",\"".$_POST["categoria"]."\")";
+                                $query = "INSERT INTO oggetti (marca,modello,condizioni,prezzo,categoria) VALUES (\"".$_POST["marca"]."\",\"".$_POST["modello"]."\",\"".$_POST["condizioni"]."\",\"".$_POST["prezzo"]."\",\"".$_POST["categoria"]."\"\")";
            		  	
                                 if(!mysql_query($query))
                                 {
