@@ -30,6 +30,7 @@
                     <ul>
                         <li><a href="home.php" id="home">Home</a></li>
                         <li class="current_page"><a href="#" id="oggettiinvendita">Oggetti in vendita</a></li>
+                        <li><a href="ricerca.php" id="ricerca">Ricerca</a></li>
                         <li><a href="vendioggetto.php" id="vendioggetto">Vendi un oggetto</a></li>
                         
                         <li><a href="../../php/logout.php" id="logout">Logout</a></li>
