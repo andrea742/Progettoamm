@@ -37,6 +37,18 @@
 		</div>
 
                 </header>
+            
+            <h2>Ruolo Venditore</h2>
+       
+       <h3>  
+       <br><br>Questa pagina &egrave dedicata al ruolo venditore, da qua potrai vendere qualsiasi tipo di oggetto
+       che non utilizzi pi&uacute e qualora non sia pi&uacute convinto di volerlo vendere potrai rimuovere l'inserzione in qualsiasi
+       momento in maniera facile e intuitiva grazie alla funzione "Elimina oggetto". <br><br> <h2>Non ricordi pi&uacute se
+       avevi gi&aacute creato l'inserzione per uno specifico oggetto?</h2>  <h3>Nessun problema, utilizza la funzione cerca per vedere se 
+       l'avevi gi&aacute messo in vendita.</h3><br><br> <h2>Quanto termini la sessione non scordarti di utilizzare il tasto Logout per terminare la tua sessione.
+       
+       </h2>
+       </h3>
 
                 
                 
