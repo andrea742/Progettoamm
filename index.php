@@ -1,42 +1,55 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
-    </head>
-    <body>
-
-<h1>Benvenuto su Purchase.it </h1><br><br>
-<h2> Progetto AMM di Sabiu Andrea </h2>
-<p> Si tratta di un sito e-commerce che permette l'acquisto di un qualsiasi tipo di oggetto in maniera facile, gratuita e veloce.</p> <br>
-
-<p> Esistono 2 tipi di utenti: 
-
-<ul>
-<li> Cliente</li>
-<li> Venditore </li>
-
-</ul>
-
-<h2><p> Per accedere al progetto andare su:  </p></h2> <br>
-<a href="php/login">http://spano.sc.unica.it/amm2014/sabiuAndrea/Progettoamm/php/view/login</a>
-
-<p>Credenziali per accesso al sito:</p>
-    <ul>
-        <li>Cliente:</li>
-        <ul>
-            <li>user: cliente</li>
-            <li>password: cliente</li>
-        </ul>
-        <li>Ruolo venditore:</li>
-        <ul>
-            <li>username: venditore</li>
-            <li>password: venditore</li>
-        </ul>
-    </ul>
-
-
-
-
-</body>
+    	<head>
+        	<title>AMMacchina</title>
+        	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        	<link rel="stylesheet" type="text/css" href="css/style.css">
+        	<link rel="shortcut icon" href="img/icona.ico">
+	</head>
+	
+	<body bgcolor="#C0C0C0">
+	
+	<br>
+	
+	<header>
+        	<div style="text-align: center">
+            		<img src="img/1500.png" alt="" width="600" height="250"/>
+        	</div>
+	</header>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<div style="text-align: center">
+	
+		<form method="post" action="php/login.php">
+		
+			<input type="hidden" name="cmd" value="login"/>
+			<label for="username"> Username </label>
+			<input type="text" name="username" id="username"/>
+			<br>
+			<br>
+			<label for="password"> Password </label>
+			<input type="password" name="password" id="password"/> 
+			<br>
+			<br>
+			<button id="button" type="submit" name="cmd"  value="Login">Login</button>
+		
+		</form>
+	</div>
+	
+	<br>
+	
+	<div style="text-align: center">
+		<a href="README.md">Accesso al progetto</a>
+	</div>
+	
+	</body>
+	
 </html>
