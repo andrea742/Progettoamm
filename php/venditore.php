@@ -29,9 +29,9 @@
 			<div style="text-align: center" id="menu">
                     	<ul>
                         	<li class="current_page"><a href="#" id="home">Home</a></li>
-                        	<li><a href="dipendente/parcoauto.php" id="parcoauto">Parco Auto</a></li>
-                        	<li><a href="dipendente/aggiungiauto.php" id="aggiungiauto">Aggiungi Auto</a></li>
-                        	<li><a href="dipendente/ricerca.php" id="ricerca">Ricerca</a></li>
+                        	<li><a href="venditore/parcoauto.php" id="parcoauto">Parco Auto</a></li>
+                        	<li><a href="venditore/aggiungiauto.php" id="aggiungiauto">Aggiungi Auto</a></li>
+                        	<li><a href="venditore/ricerca.php" id="ricerca">Ricerca</a></li>
                         	<li><a href="../php/logout.php" id="logout">Logout</a></li>
                     	</ul>
                 	</div>

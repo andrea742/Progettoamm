@@ -2,13 +2,13 @@
 
 session_start();
 
-$connessione_al_server=mysql_connect("localhost","mameliSimone","macaco861");
+$connessione_al_server=mysql_connect("localhost","sabiuAndrea","talpa816");
 
 if(!$connessione_al_server)
 {
 	die ('Non riesco a connettermi: errore '.mysql_error());
 }
-$db_selected=mysql_select_db("amm14_mameliSimone",$connessione_al_server);
+$db_selected=mysql_select_db("amm14_sabiuAndrea",$connessione_al_server);
 
 if(!$db_selected)
 {
@@ -19,15 +19,15 @@ $_SESSION["username"]=$_POST["username"];
 
 $_SESSION["password"]=$_POST["password"]; 
 
-$querydip = mysql_query("SELECT * FROM users WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='dipendente'") or DIE('query non riuscita'.mysql_error());
+$queryven = mysql_query("SELECT * FROM venditori WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='venditore'") or DIE('query non riuscita'.mysql_error());
 
-$querycli = mysql_query("SELECT * FROM users WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='cliente'") or DIE('query non riuscita'.mysql_error());
+$querycli = mysql_query("SELECT * FROM clienti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='cliente'") or DIE('query non riuscita'.mysql_error());
 
-if(mysql_num_rows($querydip))
+if(mysql_num_rows($queryven))
 {   
-	$row = mysql_fetch_assoc($querydip); 
+	$row = mysql_fetch_assoc($queryven); 
 	$_SESSION["logged"] =true;  
-	header("location:dipendente.php"); 
+	header("location:venditore.php"); 
 	
 }
 else if(mysql_num_rows($querycli))
