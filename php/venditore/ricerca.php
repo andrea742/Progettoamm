@@ -96,7 +96,7 @@
 
 		<div style="text-align: center">
 		
-		<h3>Ricerca la tua auto:</h3>
+		<h3>Ricerca oggetti:</h3>
 		
 		<form action="ricerca.php?ricercaoggetto" method="post" id="form-login">
                 	<br>Marca: <input type="text" name="marca"><br>

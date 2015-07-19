@@ -41,7 +41,7 @@
                 
                 <div style="text-align: center">
                 
-                       <h3>Parco Auto:</h3>
+                       <h3>Oggetti in vendita:</h3>
                        
                 </div>
                 
