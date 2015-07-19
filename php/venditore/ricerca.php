@@ -75,7 +75,7 @@
                                 
                                 $queryvis = mysql_query("SELECT * FROM oggetti $aux") or die("query non riuscita".mysql_error());
                                 
-                                if(mysql_num_rows($query)==0)
+                                if(mysql_num_rows($queryvis)==0)
                                 {
                                 ?>
                                 	<div style="text-align: center">
@@ -83,7 +83,7 @@
                                 	</div>
                                 <?
                                 }
-                                else if(mysql_num_rows($query)!=0)
+                                else 
                                 {
                                 	?>
                                 	<div style="text-align: center">
