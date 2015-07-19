@@ -71,7 +71,7 @@
                                 if($_SESSION["categoria"] !="")
                                     $aux .= " AND categoria ='".$_SESSION["categoria"]."'";
                                 
-                                i
+                                
                                 $queryvis = mysql_query("SELECT * FROM oggetti $aux") or die("query non riuscita".mysql_error());
                                 
                                 if(mysql_num_rows($query)==0)
