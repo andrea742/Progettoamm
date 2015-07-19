@@ -8,7 +8,7 @@
         	<link rel="shortcut icon" href="img/icona.ico">
 	</head>
 	
-	<body bgcolor="#47cfa8">  
+	<body bgcolor="#44cf80">  
 	
 	<br>
 	
