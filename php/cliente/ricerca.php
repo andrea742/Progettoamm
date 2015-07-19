@@ -29,6 +29,7 @@
                     <ul>
                         <li><a href="home.php" id="home">Home</a></li>
                         <li><a href="oggettiinvendita.php" id="oggettiinvendita">Oggetti in vendita</a></li>
+                        <li><a href="carrello.php" id="carrello">Carrello</a></li>
                         <li class="current_page"><a href="#" id="ricerca">Ricerca</a></li>
                         <li><a href="../../php/logout.php" id="logout">Logout</a></li>
                     </ul>
@@ -95,7 +96,7 @@
 
 		<div style="text-align: center">
 		
-		<h3>Ricerca la tua auto:</h3>
+		<h3>Ricerca oggetti:</h3>
 		
 		<form action="ricerca.php?ricercaoggetto" method="post" id="form-login">
                 	<br>Marca: <input type="text" name="marca"><br>
