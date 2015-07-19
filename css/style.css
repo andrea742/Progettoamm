@@ -1,42 +1,44 @@
 #button
 {
-	display: inline-block;
-	padding: 1.3em 3em;
-	background: #004a80;
-	border-radius: 25px;
-	text-decoration: none;
-	font-weight: 200;
-	color: #FFF;
-	border: 0px solid white;
-	margin: auto;
-	margin-top: 20px;
-	display: block;
-	width: 150px;
-	text-align: center;
+	color: #FFFFFF;
+    background-color: blue;
+    height: 2em;
+    font-weight: bold;
+    border-radius: 1em;
+    min-width: 100px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 #page
 {
-	margin: auto;
-	background-color: #C0C0C0;
-	border-radius: 12px;
-	border-top: 4px groove #FFFFFF;
-	border-left: 4px groove #FFFFFF;
-	border-right: 4px ridge #FFFFFF;
-	border-bottom: 4px ridge #FFFFFF;
-	box-shadow: 8px 8px 20px black;
+
+        background-repeat: repeat-x;
+        background-color: #eaed9a;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom:25px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        
+        border-radius: 12px;
+	border-top: 4px groove #ebe4e4;
+	border-left: 4px groove #ebe4e4;
+	border-right: 4px ridge #ebe4e4;
+	border-bottom: 4px ridge #ebe4e4;
 }
 
 #header
 {
 	padding: 10px 0px 10px 0px;
-	background-color: #004a80;
+	background-color: yellowgreen;
 	border-radius: 5px 5px 5px 5px;
 }
 
 #top
 {
-	background-color: #004a80;
+	background-color: yellowgreen;
 	border-radius: 5px 5px 5px 5px;
 }
 
@@ -89,9 +91,4 @@ div#menu li
 	border-radius: 0px 0px 5px 5px;
 }
 
-#footer
-{
-	padding: 10px 0px 10px 0px;
-	background-color: #004a80;
-	border-radius: 5px 5px 5px 5px;
-}
+
