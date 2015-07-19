@@ -21,7 +21,7 @@
                 <header>
                 
                 <div style="text-align: center" id="header">
-                	<img src="../img/1500.png" alt="" width="600" height="250"/>
+                	<img src="img/logo.PNG" alt="" width="750" height="135"/>
                 </div>
                     
                 <div style="text-align: center" id="top">
@@ -29,8 +29,8 @@
 			<div style="text-align: center" id="menu">
                     	<ul>
                         	<li class="current_page"><a href="#" id="home">Home</a></li>
-                        	<li><a href="venditore/parcoauto.php" id="parcoauto">Parco Auto</a></li>
-                        	<li><a href="venditore/aggiungiauto.php" id="aggiungiauto">Aggiungi Auto</a></li>
+                        	<li><a href="venditore/oggettiinvendita.php" id="oggettiinvendita">Oggetti in vendita</a></li>
+                        	<li><a href="venditore/vendioggetto.php" id="vendioggetto">Vendi un oggetto</a></li>
                         	<li><a href="venditore/ricerca.php" id="ricerca">Ricerca</a></li>
                         	<li><a href="../php/logout.php" id="logout">Logout</a></li>
                     	</ul>
@@ -39,43 +39,11 @@
 
                 </header>
                 
-                <div style="text-align: center">
                 
-                       <h3>Promemoria</h3>
-                       
-                </div>
                 
-                <div style="text-align: center">
-
-		<!-- <form action=""> -->
-			<textarea name="textbox" cols="95" rows="5">Chiamare X al numero N, Prenotare tagliando X, Leggere nuova normativa autoveicoli, ecc</textarea>
-			<br>
-			<input type="submit" value="Salva" id="button">
-			<input type="button" value="Cancella" id="button" onclick='clear();'/>
-		<!-- </form> -->
-		
-		<br>
-                <br>
-                <br>
-                <br>
-
-		</div>
                 
-        	<div id="footer">
-        
-                	<div style="text-align: center">
-                        	<b><i>Simone Mameli</i></b>
-                	</div>
                 
-                <br>
-                <br>
-                
-                <div style="text-align: center">
-                        <a id="htmlval" href="http://validator.w3.org/check?uri=referer" target="_blank">HTML Valid</a>
-
-                        <a id="cssval" href="http://jigsaw.w3.org/css-validator/check/refer" target="_blank">CSS Valid</a>
-                </div>
-        	</div>
+        	
         </div>
 
 </body>

@@ -54,9 +54,9 @@ else
 	
 	<header>
         	<div style="text-align: center">
-            		<img src="../img/1500.png" width="600" height="250"/>
+            		<img src="img/logo.PNG" alt="" width="750" height="135"/>
         	</div>
-        	<body bgcolor="#C0C0C0">
+        	<body bgcolor="#88e7ea">
 	</header>
 	
 	<br>
@@ -88,7 +88,7 @@ else
 	<br>
 	
 	<div style="text-align: center">
-		<a href="../README.md">Accesso al progetto.</a>
+		<a href="../README.md">Clicca qui per accedere alle info</a>
 	</div>
 	
 	</body>
