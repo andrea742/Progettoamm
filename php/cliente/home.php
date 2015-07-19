@@ -37,17 +37,17 @@
 		</div>
 
                 </header>
-       <h3>prova scrittura</h3>
+       <h2>prova scrittura</h2>
        
-       <h2>  
+       <h3>  
        Questa pagina è la pagina dedicata al ruolo cliente, da qua potrai fare acquisti inserendo nuovi articoli
        all'interno del tuo carrello e qualora non sia convinto di volerlo acquistare potrai rimuoverlo in qualsiasi
-       momento grazie alla funzione "Rimuovi dal carrello". <br> Non trovi l'articolo che stai cercando nella sezione 
-       "Oggetti in vendita"? <br> Nessun problema, utilizza la funzione cerca per vedere se il venditore mette a disposizione
+       momento grazie alla funzione "Rimuovi dal carrello". <br><br> Non trovi l'articolo che stai cercando nella sezione 
+       "Oggetti in vendita"? <br><br> Nessun problema, utilizza la funzione cerca per vedere se il venditore mette a disposizione
        l'articolo.
        
        
-       </h2>
+       </h3>
                 
                 
 	<br>
