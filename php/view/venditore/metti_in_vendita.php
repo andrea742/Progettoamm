@@ -1,113 +1,102 @@
+<!DOCTYPE html>
 
+<html>
 
-            
+        
+        
+	<body>
+	
+        <div id="page">
+                
+                <header>
+                
+                    <div style="text-align: center" id="header">
+                        
+                    </div>
+                    
+                
+                   
+                </div>
+		</div>
+		    
+                </header>
 
-                            <?
-                            if(isset($_GET["campi"]) && ($_GET["campi"]=="ok"))
-                            {
-                                $connessione_al_server = mysql_connect("localhost","sabiuAndrea","talpa816");
+		<?php
+                $connessione_al_server = mysql_connect("localhost","sabiuAndrea","talpa816");
+                
+                if(!$connessione_al_server)
+                {
+                	die("Errore: connessione non riuscita".mysql_error());
+            	}
+            	$db_selected = mysql_select_db("amm14_sabiuAndrea", $connessione_al_server);
+            	if(!$db_selected)
+            	{
+                	die("Errore: selezione del database errata ".mysql_error());
+            	}
 
-                                if(!$connessione_al_server)
+                if(isset($_GET["aggiungi"]))
+		{
+                                $_SESSION["marca"] = $_POST["marca"];
+                                $_SESSION["modello"] = $_POST["modello"];
+                                $_SESSION["condizioni"] = $_POST["condizioni"];
+                                $_SESSION["prezzo"] = $_POST["prezzo"];
+                                $_SESSION["categoria"] = $_POST["categoria"];
+                                $_SESSION["stato"] = $_POST["stato"];
+                                    
+                                $query = "INSERT INTO prodotti (marca,modello,condizioni,prezzo,categoria,stato) VALUES (\"".$_POST["marca"]."\",\"".$_POST["modello"]."\",\"".$_POST["condizioni"]."\",\"".$_POST["prezzo"]."\",\"".$_POST["categoria"]."\")";
+           		  	
+                                if(!mysql_query($query))
                                 {
-                                    die("Errore: connessione non riuscita".mysql_error());
+                                ?>
+                                	<div style="text-align: center">
+                                		<h3><font color="#FF0000">ERRORE : PRODOTTO NON INSERITO.</font></h3>
+                                	</div>
+                                <?
                                 }
-
-
-
-                                $db_selected = mysql_select_db("amm14_sabiuAndrea", $connessione_al_server);
-
-                                if(!$db_selected)
-                                {
-                                    die("Errore: selezione del database errata ".mysql_error());
-                                }
-
-                                
-
-                                $query = "INSERT INTO prodotti (marca,modello,condizioni,prezzo,categoria,venditore)
-                                VALUES (\"".$_POST["marca"]."\",\"".$_POST["modello"]."\",\"".$_POST["condizioni"]."\",\"".$_POST["prezzo"]."\",\"".$_POST["categoria"]."\",\"".$_POST["venditore"]."\",\"".$_POST["chilometri"]."\")";
-
-                                $result = mysql_query($query);
-
-                                if(!$result)
-                                {
-                                    die("Errore nella query: ".mysql_error());
-
-                                    $pagina_login = "metti_in_vendita.php?agg=err";
-
-                                    header("Location:".$pagina_login);
-                                }
-
                                 else
                                 {
-                                    $pagina_login = "metti_in_vendita.php?agg=ok";
-
-                                    header("Location:".$pagina_login);
+                                	?>
+                                	<div style="text-align: center">
+                                		<h3><font color="#4CC417">PRODOTTO INSERITO CORRETTAMENTE!</font></h3>
+                                	</div>
+                                	<?
                                 }
-                            }
-
-                            
-
-                            
-                                ?>
-
-                            <p>Inserisci le caretteristiche del prodotto che vuoi vendere:</p>
-
-                            <form action="metti_in_vendita.php?campi=ok" method="post" id="form-login">
-                                <table id="table-form">
-                                    <tr>
-                                        <td>Marca:</td>
-
-                                        <td><input type="text" name="marca" placeholder="Samsung" required/></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Modello:</td>
-
-                                        <td><input type="text" name="modello" placeholder="galaxy S3" required/></td>
-                                    </tr>
-
-                                    
-
-                                    <tr>
-                                        <td>Condizioni:</td>
-
-                                        <td>
-                                            <input type="radio" name="condizioni" value="nuovo" checked/>Nuovo
-                                            <input type="radio" name="condizioni" value="usato"/>Usato
-                                           
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Prezzo:</td>
-
-                                        <td><input type="number" name="prezzo" min="0" placeholder="49" required/></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Categoria:</td>
-
-                                        <td>
-                                            <input type="radio" name="categoria" value="elettronica" checked/>Elettronica
-                                            <input type="radio" name="categoria" value="abbigliamento" checked/>Abbigliamento
-                                            <input type="radio" name="categoria" value="veicoli" checked/>Veicoli
-                                            <input type="radio" name="categoria" value="informatica" checked/>Informatica
-                                            <input type="radio" name="categoria" value="altro" checked/>Altro
-                                            
-                                        
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td></td>
-                                        <td><input type="submit" value="Aggiungi"/><td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </td>
-
+                }
+                ?>
+                                
+                <div style="text-align: center">
+		
+		<h3>Aggiungi la tua auto:</h3>
+		
+                <form action="metti_in_vendita.php?aggiungi" method="post" id="form-login">
+                	<br>Marca: <input type="text" name="marca"><br>
+                	<br>Modello:<input type="text" name="modello"><br>
+                	<br>Condizioni:
+                	                            <input type="radio" name="condizioni" value="nuovo" checked>nuovo
+                	                            <input type="radio" name="condizioni" value="usato">usato
+                	                            
+	
+                	<br><br>Prezzo:<input type="number" name="prezzo" min="0"><br>
                         
+                        <br>Categoria:
+                	                            <input type="radio" name="categoria" value="elettronica" checked>elettronica
+                                                    <input type="radio" name="categoria" value="abbigliamento" checked>abbigliamento
+                                                    <input type="radio" name="categoria" value="veicoli" checked>veicoli
+                                                    <input type="radio" name="categoria" value="informatica" checked>informatica
+                                                    <input type="radio" name="categoria" value="altro" checked>altro
+                                                    
+                	                            
+                	            
+	
+                	<br><input type="submit" value="Aggiungi" id="button"><br>
+                </form>
+		</div>
+	<br>
+	<br>
+	<br>
+                
+        
 
+</body>
 
-
-
+</html>
