@@ -20,7 +20,7 @@
                 <header>
                 
                     <div style="text-align: center" id="header">
-                        <img src="../../img/logo.PNG" alt="" width="750" height="135"/>
+                        <img src="../img/logo.PNG" alt="" width="750" height="135"/>
                     </div>
                     
 		<div style="text-align: center" id="top">
