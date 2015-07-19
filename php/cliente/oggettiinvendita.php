@@ -51,7 +51,7 @@
                 {
                 	die("Errore: connessione non riuscita".mysql_error());
             	}
-            	$db_selected = mysql_select_db("amm14_andreaSabiu", $connessione_al_server);
+            	$db_selected = mysql_select_db("amm14_sabiuAndrea", $connessione_al_server);
             	if(!$db_selected)
             	{
                 	die("Errore: selezione del database errata ".mysql_error());
