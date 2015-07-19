@@ -14,7 +14,7 @@
 	
 	<header>
         	<div style="text-align: center">
-            		<img src="img/logo.PNG" alt="" width="600" height="250"/>
+            		<img src="img/logo.PNG" alt="" width="750" height="135"/>
         	</div>
 	</header>
 	
