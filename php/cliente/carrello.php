@@ -55,10 +55,8 @@
                 	die("Errore: selezione del database errata ".mysql_error());
             	}
             	$query = mysql_query("SELECT * FROM carrello JOIN oggetti ON carrello.idoggetto = oggetti.id WHERE 1") or die("query non riuscita".mysql_error());
-            	$vis = mysql_fetch_object($query);
-                ?>
-                
-                 <?php
+            	
+               
             	while($vis = mysql_fetch_object($query))
             	{
             	?>
