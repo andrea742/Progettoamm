@@ -58,11 +58,11 @@
                 	die("Errore: selezione del database errata ".mysql_error());
             	}
             	$query = mysql_query("SELECT * FROM oggetti WHERE condizioni='usato' OR condizioni='nuovo'") or die("query non riuscita".mysql_error());
-            	$vis = mysql_fetch_object($query);
+            	$ctr = mysql_fetch_object($query);
                 ?>
                 
             	<?php
-            	while($vis = mysql_fetch_object($query))
+            	while($ctr = mysql_fetch_object($query))
             	{
             	?>
             
@@ -72,14 +72,14 @@
                    
                     <img src="../../img/oggetti_in_vendita.png" width="100" height="70" alt="">
                 	
-                	Marca : <?echo"$vis->marca";?> ||
-                	Modello: <?echo"$vis->modello";?> ||
-                	Condizioni:<?echo"$vis->condizioni";?> ||
-                	Prezzo: <?echo"$vis->prezzo";?>
+                	Marca : <?echo"$ctr->marca";?> ||
+                	Modello: <?echo"$ctr->modello";?> ||
+                	Condizioni:<?echo"$ctr->condizioni";?> ||
+                	Prezzo: <?echo"$ctr->prezzo";?>
                 	
-                	Euro ||  Categoria: <?echo"$vis->categoria";?> ||
+                	Euro ||  Categoria: <?echo"$ctr->categoria";?> ||
                 	
-                        <a href="oggettiinvendita.php?aggiungi=<?echo $vis->id?>" id="button">Aggiungi al carrello</a>
+                        <a href="oggettiinvendita.php?aggiungi=<?echo $ctr->id?>" id="button">Aggiungi al carrello</a>
                 	
                 </div> 
                 
@@ -92,13 +92,13 @@
                 if(isset($_GET["aggiungi"]))
                 {
                 	$idoggetto = $_GET["aggiungi"];
-			$querypresagg = mysql_query("INSERT INTO carrello(indice, idoggetto) VALUES (indice,$idoggetto)") or die('Query non riuscita'.mysql_error());
+			$qogg = mysql_query("INSERT INTO carrello(indice, idoggetto) VALUES (indice,$idoggetto)") or die('Query non riuscita'.mysql_error());
                 }
                             
                 if(isset($_GET["rimuovi"]) && ($_GET["rimuovi"]!=0))
                 {
                         $idoggetto = $_GET["rimuovi"];
-			$querypres = mysql_query("DELETE FROM carrello WHERE idoggetto='$idoggetto'") or die('Query non riuscita'.mysql_error());
+			$qobj = mysql_query("DELETE FROM carrello WHERE idoggetto='$idoggetto'") or die('Query non riuscita'.mysql_error());
                 }
 		?>
 

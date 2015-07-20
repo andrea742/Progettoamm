@@ -52,7 +52,7 @@
                 	die("Errore: selezione del database errata ".mysql_error());
             	}
             	$query = mysql_query("SELECT * FROM oggetti WHERE condizioni='usato'") or die("query non riuscita".mysql_error());
-            	$vis = mysql_fetch_object($query);
+            	$ctr = mysql_fetch_object($query);
                 if(isset($_GET["ricercaoggetto"]))
 		{
                                 $_SESSION["marca"] = $_POST["marca"];
@@ -60,22 +60,22 @@
                                 $_SESSION["condizioni"] = $_POST["condizioni"];
                                 $_SESSION["prezzo"] = $_POST["prezzo"];
                                 $_SESSION["categoria"] = $_POST["categoria"];
-                                $aux = "WHERE condizioni ='usato'";
+                                $app = "WHERE condizioni ='usato'";
                                 if($_SESSION["marca"] !="")
-                                    $aux .= " AND marca ='".$_SESSION["marca"]."'";
+                                    $app .= " AND marca ='".$_SESSION["marca"]."'";
                                 if($_SESSION["modello"] !="")
-                                    $aux .= " AND modello ='".$_SESSION["modello"]."'";
+                                    $app .= " AND modello ='".$_SESSION["modello"]."'";
                                 if($_SESSION["condizioni"] !="")
-                                    $aux .= " AND condizioni >='".$_SESSION["condizioni"]."'";
+                                    $app .= " AND condizioni >='".$_SESSION["condizioni"]."'";
                                 if($_SESSION["prezzo"] !="")
-                                    $aux .= " AND prezzo <='".$_SESSION["prezzo"]."'";
+                                    $app .= " AND prezzo <='".$_SESSION["prezzo"]."'";
                                 if($_SESSION["categoria"] !="")
-                                    $aux .= " AND categoria ='".$_SESSION["categoria"]."'";
+                                    $app .= " AND categoria ='".$_SESSION["categoria"]."'";
                                 
                                 
-                                $queryvis = mysql_query("SELECT * FROM oggetti $aux") or die("query non riuscita".mysql_error());
+                                $control = mysql_query("SELECT * FROM oggetti $app") or die("query non riuscita".mysql_error());
                                 
-                                if(mysql_num_rows($queryvis)==0)
+                                if(mysql_num_rows($control)==0)
                                 {
                                 ?>
                                 	<div style="text-align: center">

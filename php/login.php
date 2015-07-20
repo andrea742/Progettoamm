@@ -19,20 +19,20 @@ $_SESSION["username"]=$_POST["username"];
 
 $_SESSION["password"]=$_POST["password"]; 
 
-$queryven = mysql_query("SELECT * FROM utenti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='venditore'") or DIE('query non riuscita'.mysql_error());
+$queryvenditore = mysql_query("SELECT * FROM utenti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='venditore'") or DIE('query non riuscita'.mysql_error());
 
-$querycli = mysql_query("SELECT * FROM utenti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='cliente'") or DIE('query non riuscita'.mysql_error());
+$querycliente = mysql_query("SELECT * FROM utenti WHERE username='".$_POST["username"]."' AND password ='".$_POST["password"]."' AND ruolo='cliente'") or DIE('query non riuscita'.mysql_error());
 
-if(mysql_num_rows($queryven))
+if(mysql_num_rows($queryvenditore))
 {   
-	$row = mysql_fetch_assoc($queryven); 
+	$row = mysql_fetch_assoc($queryvenditore); 
 	$_SESSION["logged"] =true;  
 	header("location:venditore.php"); 
 	
 }
-else if(mysql_num_rows($querycli))
+else if(mysql_num_rows($querycliente))
 {   
-	$row = mysql_fetch_assoc($querycli); 
+	$row = mysql_fetch_assoc($querycliente); 
 	$_SESSION["logged"] =true;  
 	header("location:cliente.php"); 
 }

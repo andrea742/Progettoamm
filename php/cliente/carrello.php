@@ -57,7 +57,7 @@
             	$query = mysql_query("SELECT * FROM carrello JOIN oggetti ON carrello.idoggetto = oggetti.id WHERE 1") or die("query non riuscita".mysql_error());
             	
                
-            	while($vis = mysql_fetch_object($query))
+            	while($ctr = mysql_fetch_object($query))
             	{
             	?>
             
@@ -69,16 +69,16 @@
                    
                     <img src="../../img/oggetti_in_vendita.png" width="100" height="70" alt="">
                    
-                        Marca : <?echo"$vis->marca";?> ||
-                	Modello: <?echo"$vis->modello";?> ||
-                	Condizioni:<?echo"$vis->condizioni";?> ||
-                	Prezzo: <?echo"$vis->prezzo";?>
+                        Marca : <?echo"$ctr->marca";?> ||
+                	Modello: <?echo"$ctr->modello";?> ||
+                	Condizioni:<?echo"$ctr->condizioni";?> ||
+                	Prezzo: <?echo"$ctr->prezzo";?>
                 	
-                	Euro ||  Categoria: <?echo"$vis->categoria";?> || 
+                	Euro ||  Categoria: <?echo"$ctr->categoria";?> || 
 
                         
                         
-                        <a href="oggettiinvendita.php?rimuovi=<?echo $vis->id?>" id="button">Rimuovi dal carrello</a>
+                        <a href="oggettiinvendita.php?rimuovi=<?echo $ctr->id?>" id="button">Rimuovi dal carrello</a>
 
 			
 
@@ -88,17 +88,7 @@
                         }
                         ?>
  
-                   	<?php
-                	if(isset($_GET["conferma"]))
-                	{
-				$idcarr = $_GET["conferma"];
-                	    	$querydel = mysql_query("DELETE FROM oggetti WHERE id='$idoggetto'") or die('Query non riuscita'.mysql_error());     
-				$queryconf = mysql_query("DELETE FROM carrello WHERE label!='NON_ELIMINARE'") or die('Query non riuscita'.mysql_error());      
-
-				header("refresh:1;url=carrello.php");
-
-                	}
-                        ?>
+                   	
 			
 	<br>
 	<br>
