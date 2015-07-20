@@ -42,7 +42,7 @@ else
 	<!DOCTYPE html>
 	<html>
     	<head>
-        	<title>AMMacchina</title>
+        	<title>Purchase.it - Login</title>
         	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         	<link rel="stylesheet" type="text/css" href="../css/style.css">
         	<link rel="shortcut icon" href="../img/icona.ico">
@@ -54,7 +54,7 @@ else
 	
 	<header>
         	<div style="text-align: center">
-            		<img src="img/logo.PNG" alt="" width="750" height="135"/>
+            		<img src="../img/logo.PNG" alt="" width="750" height="135"/>
         	</div>
         	<body bgcolor="#88e7ea">
 	</header>
@@ -62,7 +62,7 @@ else
 	<br>
 	<br>
 	<div style="text-align: center">
-		<h4><font color="#FF0000">L'username o la password sono errati.</font></h4>
+		<h4><font color="#FF0000">ATTENZIONE : Username Password errati.</font></h4>
 	</div>
 	<br>
 	<br>
@@ -88,7 +88,7 @@ else
 	<br>
 	
 	<div style="text-align: center">
-		<a href="../README.md">Clicca qui per accedere alle info</a>
+		<a href="../README.md">Clicca qui per accedere alle info del sito</a>
 	</div>
 	
 	</body>
