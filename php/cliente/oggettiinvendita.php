@@ -95,11 +95,11 @@
 			$querypresagg = mysql_query("INSERT INTO carrello(indice, idoggetto) VALUES (indice,$idoggetto)") or die('Query non riuscita'.mysql_error());
                 }
                             
-                if(isset($_GET["rimuovi"]) && ($_GET["rimuovi"]!=0))
+                /*if(isset($_GET["rimuovi"]) && ($_GET["rimuovi"]!=0))
                 {
                         $idoggetto = $_GET["rimuovi"];
 			$querypres = mysql_query("DELETE FROM carrello WHERE idoggetto='$idoggetto'") or die('Query non riuscita'.mysql_error());
-                }
+                }*/
 		?>
 
 		<br>
