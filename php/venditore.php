@@ -1,3 +1,5 @@
+<!-- Pagina home del venditore -->
+
 <!DOCTYPE html>
 
 <html>

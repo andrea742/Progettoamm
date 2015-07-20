@@ -1,3 +1,5 @@
+<!-- pagina di logout -->
+
 <!DOCTYPE html>
 
 <html>

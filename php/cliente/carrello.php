@@ -1,3 +1,5 @@
+<!-- Visualizza il carrello del cliente, implementato con database-->
+
 <!DOCTYPE html>
 
 <html>

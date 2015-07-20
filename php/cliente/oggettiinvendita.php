@@ -1,3 +1,5 @@
+<!-- Il cliente grazie a questa pagina può vedere gli oggetti in vendita presenti nei database-->
+
 <!DOCTYPE html>
 
 <html>

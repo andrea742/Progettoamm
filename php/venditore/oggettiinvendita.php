@@ -1,3 +1,6 @@
+<!-- Il venditore su questa pagina avrà a disposizione tutte le inserzioni degli oggetti in vendita -->
+
+
 <!DOCTYPE html>
 
 <html>

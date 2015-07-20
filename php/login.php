@@ -1,3 +1,5 @@
+<!-- Pagine che gestisce il login di cliente e venditore tramite database -->
+
 <?php
 
 session_start();

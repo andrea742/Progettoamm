@@ -1,3 +1,6 @@
+<!--Questa pagina gestisce la funzione ricerca per il cliente -->
+
+
 <!DOCTYPE html>
 
 <html>
@@ -38,6 +41,11 @@
 		</div>
 		    
                 </header>
+            
+            
+                
+                
+                
                 
                 <?php
                 $connessione_al_server = mysql_connect("localhost","sabiuAndrea","talpa816");
@@ -55,6 +63,7 @@
             	$ctr = mysql_fetch_object($query);
                 if(isset($_GET["ricercaoggetto"]))
 		{
+                    
                                 $_SESSION["marca"] = $_POST["marca"];
                                 $_SESSION["modello"] = $_POST["modello"];
                                 $_SESSION["condizioni"] = $_POST["condizioni"];

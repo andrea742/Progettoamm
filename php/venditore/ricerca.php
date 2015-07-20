@@ -1,3 +1,6 @@
+<!-- Funzione ricerca per il venditore degli articoli presenti in vendita  -->
+
+
 <!DOCTYPE html>
 
 <html>

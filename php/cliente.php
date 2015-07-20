@@ -1,3 +1,5 @@
+<!-- pagina home del cliente -->
+
 <!DOCTYPE html>
 
 <html>

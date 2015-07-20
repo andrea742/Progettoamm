@@ -1,3 +1,5 @@
+<!-- Connessione al database -->
+
 <?php
 
 $connessione_al_server=mysql_connect("localhost","sabiuAndrea","talpa816");

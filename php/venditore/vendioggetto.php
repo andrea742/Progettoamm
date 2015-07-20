@@ -1,3 +1,5 @@
+<!-- Grazie a questa pagina il venditore può mettere in vendita i suoi oggetti, gestione che avviene attraverso il database -->
+
 <!DOCTYPE html>
 
 <html>
